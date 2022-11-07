@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Movie Details</title>
+</head>
+<body>
+    <nav class="auth-nav second">
+        
+        <div class="logo-nav">
+            <img src="assets/nav-logo.png" alt="logo">
+
+        </div>
+        <div class="icon-nav">
+                <a href="homepage.html">Home</a>
+                <a href="viewAll.html">List Movie</a>
+        </div>
+        <div class="wrap-nav">
+            <div class="flex-nav">
+                <div class="picture-search">
+                    <div><img src="assets/nav-search.png" alt=""></div> 
+                    <div class="dropdown-nav">
+                        <input type="text" placeholder="Search Movie Name ...">
+                    </div>
+                </div>
+                <div class="picture-search">
+                    <div><img src="assets/nav-photo.png" alt=""></div>
+                    <div class="dropdown-nav profile">
+                        <div class="drop-flex">
+                            <a href="profilePage.html">Profile</a>
+                            <a href="signIn.html">Logout</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parent-hiden">
+            <div class="nav-hiden">
+                <img src="assets/nav-menu.png" alt="">
+            </div>
+            <div class="nav-dropdown">
+                <div class="input-nav">
+                    <div class="search-dropdown">
+                        <img src="assets/nav-search.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="Index.html">Home</a>
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="viewAll.html">List Movie</a>
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="profilePage.html">Profile</a>
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="signIn.html">Logout</a>
+                </div>
+                <p style="text-align:center" class="bottom-footer">
+                    &#169;2020 Tickitz. All Rights Reserved.
+                </p> 
+            </div>
+        </div>
+    
+    </nav>
+    <main>
+        <section class="moviedetail-top">
+            <div class="detail-top-img">
+                <div class="img-top">
+                    <img src="assets/img-moviedetail-spiderman.png" alt="img movie details">
+                </div>
+            </div>
+            <div class="detail-top-text">
+                <div class="top-text-wrap">
+                    <div class="movie-title">Spider-Man: Homecoming</div>
+                    <div class="movie-category">Adventure, Action, Sci-Fi</div>
+                    <div class="movie-wrap">
+                        <div class="movie-detail-top">
+                            <div class="movie-detail-releasedate">
+                                <div class="movie-detail-title">Release date</div>
+                                <div class="movie-detail-description">June 28, 2017</div>
+                            </div>
+                            <div>
+                                <div class="movie-detail-title">Directed by</div>
+                                <div class="movie-detail-description">Jon Watss</div>
+                            </div>
+                        </div>
+                        <div class="movie-detail-bottom">
+                            <div class="movie-detail-duration">
+                                <div class="movie-detail-title">Duration</div>
+                                <div class="movie-detail-description">2 hours 13 minutes</div>
+                            </div>
+                            <div>
+                                <div class="movie-detail-title">Casts</div>
+                                <div class="movie-detail-description">Tom Holland, Michael Keaton, Robert Downey Jr., ...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #DEDEDE;">
+                <div class="synopsis-text">Synopsis</div>
+                <div class="synopsis-info">
+                    <p>Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened.</p>
+                </div>
+            </div>
+        </section>
+        <section class="moviedetail-center">
+            <div class="moviedetail-center-title">
+                <div class="moviedetail-center-title-text">Showtimes and Tickets</div>
+            </div>
+            <div class="moviedetail-date-location">
+                <div class="date-location-wrapper">
+                    <div class="date-border">
+                        <input type="date" id="date" name="trip-start"
+                        value="2020-07-21"></div>
+                    </div>
+                    <div class="date-border second">
+                        <div class="location-icon">
+                            <img src="assets/logo-location.png" alt="logo location" class="logo-location">
+                        </div>
+                        <select name="location" id="location">
+                            <option value="Purwokerto">Purwokerto</option>
+                            <option value="Yogyakarta">Yogyakarta</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Bandung">Bandung</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="booknow-parent">
+                <div class="booknow-parent-top">
+                    <div class="booknow-wrap">
+                        <div>
+                            <div class="title-booknow-wrap">
+                                <div class="icon-booknow">
+                                    <img src="assets/img-footer1.png" alt="">
+                                </div>
+                                <div class="info-booknow">
+                                    <div class="text-icon">ebv.id</div>
+                                    <div class="text-info">Whatever street No.12, South Purwokerto</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="clock-wrap">
+                                <div class="clock-flex">
+                                    <div class="text-clock available">08:30am</div>
+                                    <div class="text-clock available">10:30pm</div>
+                                    <div class="text-clock">12:00pm</div>
+                                    <div class="text-clock available">02:00pm</div>
+                                </div>
+                                <div class="clock-flex">
+                                    <div class="text-clock available">04:30pm</div>
+                                    <div class="text-clock">07:00pm</div>
+                                    <div class="text-clock available">08:30pm</div>
+                                </div>
+                            </div>
+                            <div class="price-wrap">
+                                <div class="text-price">Price</div>
+                                <div class="text-seat">$10.00/seat</div>
+                            </div>
+                            <div class="booknow-wrap-button">
+                                <div class="booknow-button">
+                                    <a href="orderPage.html">
+                                        <a href="orderPage.html">
+                                            <button type="submit" id="booknow">Book Now</button></div>
+    
+                                        </a>
+    
+                                    </a>
+                            </div>
+                        </div>
+                        
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="booknow-wrap">
+                        <div>
+                            <div class="title-booknow-wrap">
+                                <div class="icon-booknow">
+                                    <div class="img-booknow2">
+                                        <img src="assets/img-footer2.png" width="110px" height="auto" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="info-booknow">
+                                    <div class="text-icon">CineOne21</div>
+                                    <div class="text-info">Downcare street  No. 21,
+                                        East Purwokerto</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="clock-wrap">
+                                <div class="clock-flex">
+                                    <div class="text-clock">08:30am</div>
+                                    <div class="text-clock available">10:00pm</div>
+                                    <div class="text-clock available">12:00pm</div>
+                                    <div class="text-clock selected">02:00pm</div>
+                                </div>
+                                <div class="clock-flex">
+                                    <div class="text-clock available">04:00pm</div>
+                                    <div class="text-clock available">06:00pm</div>
+                                    <div class="text-clock">08:00pm</div>
+                                </div>
+                            </div>
+                            <div class="price-wrap">
+                                <div class="text-price">Price</div>
+                                <div class="text-seat">$10.00/seat</div>
+                            </div>
+                            <div class="booknow-wrap-button">
+                                <div class="booknow-button">
+                                    <a href="orderPage.html">
+                                        <button type="submit" id="booknow">Book Now</button></div>
+
+                                    </a>
+                            </div>
+                        </div>
+                        
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="booknow-wrap">
+                        <div>
+                            <div class="title-booknow-wrap">
+                                <div class="icon-booknow">
+                                    <img src="assets/img-footer3.png" alt="">
+                                </div>
+                                <div class="info-booknow">
+                                    <div class="text-icon">hiflix Cinema</div>
+                                    <div class="text-info">Colonel street No. 2, East Purwokerto</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="clock-wrap">
+                                <div class="clock-flex">
+                                    <div class="text-clock available">08:30am</div>
+                                    <div class="text-clock available">10:30pm</div>
+                                    <div class="text-clock available">12:00pm</div>
+                                    <div class="text-clock">02:00pm</div>
+                                </div>
+                                <div class="clock-flex">
+                                    <div class="text-clock available">04:00pm</div>
+                                    <div class="text-clock">06:00pm</div>
+                                    <div class="text-clock available">08:00pm</div>
+                                </div>
+                            </div>
+                            <div class="price-wrap">
+                                <div class="text-price">Price</div>
+                                <div class="text-seat">$10.00/seat</div>
+                            </div>
+                            <div class="booknow-wrap-button">
+                                <div class="booknow-button">
+                                    <a href="orderPage.html">
+                                        <button type="submit" id="booknow">Book Now</button></div>
+
+                                    </a>
+                            </div>
+                        </div>
+                        
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="booknow-parent-top bottom">
+                    <div class="booknow-wrap bottom">
+                        <div>
+                            <div class="title-booknow-wrap">
+                                <div class="icon-booknow">
+                                    <img src="assets/img-footer1.png" alt="">
+                                </div>
+                                <div class="info-booknow">
+                                    <div class="text-icon">ebv.id</div>
+                                    <div class="text-info">Whatever street No.12, South Purwokerto</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="clock-wrap">
+                                <div class="clock-flex">
+                                    <div class="text-clock available">08:30am</div>
+                                    <div class="text-clock available">10:30pm</div>
+                                    <div class="text-clock">12:00pm</div>
+                                    <div class="text-clock available">02:00pm</div>
+                                </div>
+                                <div class="clock-flex">
+                                    <div class="text-clock available">04:30pm</div>
+                                    <div class="text-clock">07:00pm</div>
+                                    <div class="text-clock available">08:30pm</div>
+                                </div>
+                            </div>
+                            <div class="price-wrap">
+                                <div class="text-price">Price</div>
+                                <div class="text-seat">$10.00/seat</div>
+                            </div>
+                            <div class="booknow-wrap-button">
+                                <div class="booknow-button">
+                                    <a href="orderPage.html">
+                                        <button type="submit" id="booknow">Book Now</button></div>
+
+                                    </a>
+                            </div>
+                        </div>
+                        
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="booknow-wrap bottom">
+                        <div>
+                            <div class="title-booknow-wrap">
+                                <div class="icon-booknow">
+                                    <div class="img-booknow2">
+                                        <img src="assets/img-footer2.png" width="110px" height="auto" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="info-booknow">
+                                    <div class="text-icon">CineOne21</div>
+                                    <div class="text-info">Downcare street  No. 21,
+                                        East Purwokerto</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="clock-wrap">
+                                <div class="clock-flex">
+                                    <div class="text-clock">08:30am</div>
+                                    <div class="text-clock available">10:00pm</div>
+                                    <div class="text-clock available">12:00pm</div>
+                                    <div class="text-clock selected">02:00pm</div>
+                                </div>
+                                <div class="clock-flex">
+                                    <div class="text-clock available">04:00pm</div>
+                                    <div class="text-clock available">06:00pm</div>
+                                    <div class="text-clock">08:00pm</div>
+                                </div>
+                            </div>
+                            <div class="price-wrap">
+                                <div class="text-price">Price</div>
+                                <div class="text-seat">$10.00/seat</div>
+                            </div>
+                            <div class="booknow-wrap-button">
+                                <div class="booknow-button">
+                                    <a href="orderPage.html">
+                                        <button type="submit" id="booknow">Book Now</button></div>
+
+                                    </a>
+                            </div>
+                        </div>
+                        
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="booknow-wrap bottom">
+                        <div>
+                            <div class="title-booknow-wrap">
+                                <div class="icon-booknow">
+                                    <img src="assets/img-footer3.png" alt="">
+                                </div>
+                                <div class="info-booknow">
+                                    <div class="text-icon">hiflix Cinema</div>
+                                    <div class="text-info">Colonel street No. 2, East Purwokerto</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="clock-wrap">
+                                <div class="clock-flex">
+                                    <div class="text-clock available">08:30am</div>
+                                    <div class="text-clock available">10:30pm</div>
+                                    <div class="text-clock available">12:00pm</div>
+                                    <div class="text-clock">02:00pm</div>
+                                </div>
+                                <div class="clock-flex">
+                                    <div class="text-clock available">04:00pm</div>
+                                    <div class="text-clock">06:00pm</div>
+                                    <div class="text-clock available">08:00pm</div>
+                                </div>
+                            </div>
+                            <div class="price-wrap">
+                                <div class="text-price">Price</div>
+                                <div class="text-seat">$10.00/seat</div>
+                            </div>
+                            <div class="booknow-wrap-button">
+                                <div class="booknow-button">
+                                    <a href="orderPage.html">
+                                        <a href="orderPage.html">
+                                            <button type="submit" id="booknow">Book Now</button></div>
+    
+                                        </a>
+    
+                                    </a>
+                            </div>
+                        </div>
+                        
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="viewmore">
+                <hr class="line">
+                <div class="viewmore-wrap">
+                    <a href="viewAll.html">view more</a>                   
+                </div> 
+            </div>
+
+            <div></div>
+        </section>
+    </main>
+    <footer class="ft-hp">
+        <div class="ft-hp-wrap">
+            <div class="logo-ft">
+                <div class="logo-ft-wrap">
+                    <img src="Assets/logo-footer.png" alt="logo">
+                </div>
+                <div class="par-ft">
+                    <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.
+                    </p>
+                </div>
+            </div>
+            <div class="ft-epl">
+                <div class="epl-header">
+                    <h4 class="hd-exp">Explore<h4>
+                </div>
+                <div class="epl-content">
+                    <p>
+                        <a href="Index.html">Home</a>
+                    </p>
+                    <p>
+                        <a href="viewAll.html">List Movie</a>
+                    </p>
+                </div>
+            </div>
+            <div class="ft-sponsor">
+                <div class="epl-header2">
+                    <h4 class="hd-exp">Our Sponsor<h4>
+                </div>
+                <div class="sponsor-logo">
+                    <ul>
+                        <li><img src="assets/img-footer1.png" alt="img-logo1"></li>
+                        <li><img src="assets/img-footer2.png" alt="img-logo2"></li>
+                        <li><img src="assets/img-footer3.png" alt="img-logo3"></li>
+                    </ul>
+                    <!-- <img src="assets/img-footer1.png" alt="img-logo1"> <br>
+                    <img src="assets/img-footer2.png" alt="img-logo2"> <br>
+                    <img src="assets/img-footer3.png" alt="img-logo3"> -->
+                </div>
+            </div>
+            <div  class="fu-item-wrap">
+                <div class="epl-header">
+                    <h4 class="hd-exp follow-us">Follow Us<h4>
+                </div>
+                <ul>
+                    <li>
+                        <div class="logo-wrapper">
+                            <img src="assets/logo-fb.png" alt="facebook"> 
+                        </div> 
+                        <div class="text-ft">
+                            Tickitz Cinema id
+                        </div> 
+                    </li>
+                    <li><img src="assets/logo-ig.png.png" alt="instagram"> 
+                        <div class="text-ft">
+                            tickitz.id
+                        </div>
+                    </li>
+                    <li><img src="assets/logo-twitter.png" alt="twitter"> 
+                        <div class="text-ft">
+                            tickitz.id
+                        </div>
+                    </li>
+                    <li><img src="assets/logo-yt.png" alt="youtube"> 
+                        <div class="text-ft">
+                            Tickitz Cinema id
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-copyright">
+            <p class="bottom-footer">
+            &#169;2020 Tickitz. All Rights Reserved.
+        </p> 
+        </div>
+    </footer>
+
+</body>
+</html>

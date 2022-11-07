@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Manage Movie Page</title>
+</head>
+<body>
+    <nav class="auth-nav second">
+        
+        <div class="logo-nav">
+            <img src="assets/nav-logo.png" alt="logo">
+
+        </div>
+        <div class="icon-nav">
+                <a href="homepage.html">Home</a>
+                <a href="viewAll.html">List Movie</a>
+        </div>
+        <div class="wrap-nav">
+            <div class="flex-nav">
+                <div class="picture-search">
+                    <div><img src="assets/nav-search.png" alt=""></div> 
+                    <div class="dropdown-nav">
+                        <input type="text" placeholder="Search Movie Name ...">
+                    </div>
+                </div>
+                <div class="picture-search">
+                    <div><img src="assets/nav-photo.png" alt=""></div>
+                    <div class="dropdown-nav profile">
+                        <div class="drop-flex">
+                            <a href="profilePage.html">Profile</a>
+                            <a href="signIn.html">Logout</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parent-hiden">
+            <div class="nav-hiden">
+                <img src="assets/nav-menu.png" alt="">
+            </div>
+            <div class="nav-dropdown">
+                <div class="input-nav">
+                    <div class="search-dropdown">
+                        <img src="assets/nav-search.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="Index.html">Home</a>
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="viewAll.html">List Movie</a>
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="profilePage.html">Profile</a>
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="signIn.html">Logout</a>
+                </div>
+                <p style="text-align:center" class="bottom-footer">
+                    &#169;2020 Tickitz. All Rights Reserved.
+                </p> 
+            </div>
+        </div>
+    
+    </nav>
+<main class="layout-managemovie">
+    <section class="formmovie">
+        <div class="formmovie-padding">
+            <div class="formmovie-title">Form Movie</div>
+            <div class="formmovie-top">
+                <div class="formmovie-flex">
+                    <div class="img-bordermanagemovie">
+                        <img src="assets/img-managemovie.png" alt="">
+                    </div>
+                    <div class="formmovie-topleft">
+                        <div class="formmovie-subtitle">Movie Name</div>
+                        <div class="formmovie-text">Spider-Man: Homecoming</div>
+                        <div class="formmovie-subtitle">Director</div>
+                        <div class="formmovie-text">Jon Watts</div>
+                        <div class="formmovie-subtitle">Release date</div>
+                        <div class="formmovie-text">07/05/2020</div>
+
+                    </div>
+                    <div class="formmovie-topright">
+                        <div class="formmovie-subtitle">Category</div>
+                        <div class="formmovie-text">Action, Adventure, Sci-Fi</div>
+                        <div class="formmovie-subtitle">Category</div>
+                        <div class="formmovie-text">Action, Adventure, Sci-Fi</div>
+                        <div class="subformmovie-flex">
+                            <div>
+                                <div class="formmovie-subtitle">Duration Hour</div>
+                                <div class="formmovie-text">2</div>
+                            </div>
+                            <div>
+                                <div class="formmovie-subtitle">Duration Minute</div>
+                                <div class="formmovie-text">13</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="formmovie-subtitle">Synopsis</div>
+                <div class="formmovie-text">Thrilled by his experience with the Avengers, Peter returns home, where he
+                    lives with his Aunt May, |
+                </div>
+                <div class="button-flex">
+                    <div>
+                        <button type="submit" class="buttonsubmit">Reset</button>
+                    </div>
+                    <div>
+                        <button type="submit" class="buttonsubmit active">Submit</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="listmovie">
+            <div class="listmovie-wrap">
+                <div class="listmovie-title">Data Movie</div>
+                <div class="listmovie-sort">
+                    <div class="listmovie-sortwrap">
+                        <select name="sort" id="sort">
+                            <option value="update">Sort</option>
+                            <option value="update">Update</option>
+                            <option value="popular">Popular</option>
+                            <option value="rating">Rating</option>
+                            <option value="title">Title</option>
+                        </select>
+                        
+                    </div>
+                </div>
+                <div class="listmovie-search">
+                    <div class="listmovie-searchwrap">
+                        <input type="text" placeholder="Search Movie Name ...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-listmovie">
+            <div class="grid-listmovie-background">
+                <div class="grid-listmovie-wrap">
+                    <div class="grid-listmovie-wraptop">
+                        <div class="up-icon">
+                            <img src="assets/img-icon4.png" alt="img">
+                            <h5>Black Widow</h5>
+                            <p>Action, Adventure, Sci-Fi</p>
+                            <div class="icon-detail">
+                            <button type="submit" class="icon-detail-button">Update</button>
+                            </div>
+                            <div class="icon-detail delete">
+                                <button type="submit" class="icon-detail-button delete">Delete</button>
+                            </div>
+    
+                        </div>
+                        <div class="up-icon">
+                            <img src="assets/img-icon4.png" alt="img">
+                            <h5>Black Widow</h5>
+                            <p>Action, Adventure, Sci-Fi</p>
+                            <div class="icon-detail">
+                            <button type="submit" class="icon-detail-button">Update</button>
+                            </div>
+                            <div class="icon-detail delete">
+                                <button type="submit" class="icon-detail-button delete">Delete</button>
+                            </div>
+
+                        </div>
+                        <div class="up-icon">
+                            <img src="assets/img-icon4.png" alt="img">
+                            <h5>Black Widow</h5>
+                            <p>Action, Adventure, Sci-Fi</p>
+                            <div class="icon-detail">
+                            <button type="submit" class="icon-detail-button">Update</button>
+                            </div>
+                            <div class="icon-detail delete">
+                                <button type="submit" class="icon-detail-button delete">Delete</button>
+                            </div>
+
+                        </div>
+                        <div class="up-icon">
+                            <img src="assets/img-icon4.png" alt="img">
+                            <h5>Black Widow</h5>
+                            <p>Action, Adventure, Sci-Fi</p>
+                            <div class="icon-detail">
+                            <button type="submit" class="icon-detail-button">Update</button>
+                            </div>
+                            <div class="icon-detail delete">
+                                <button type="submit" class="icon-detail-button delete">Delete</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-listmovie-wrapbottom">
+                        <div class="up-icon">
+                            <img src="assets/img-icon4.png" alt="img">
+                            <h5>Black Widow</h5>
+                            <p>Action, Adventure, Sci-Fi</p>
+                            <div class="icon-detail">
+                            <button type="submit" class="icon-detail-button">Update</button>
+                            </div>
+                            <div class="icon-detail delete">
+                                <button type="submit" class="icon-detail-button delete">Delete</button>
+                            </div>
+
+                        </div>
+                        <div class="up-icon">
+                            <img src="assets/img-icon4.png" alt="img">
+                            <h5>Black Widow</h5>
+                            <p>Action, Adventure, Sci-Fi</p>
+                            <div class="icon-detail">
+                            <button type="submit" class="icon-detail-button">Update</button>
+                            </div>
+                        </div>
+                        <div class="up-icon">
+                            <img src="assets/img-icon4.png" alt="img">
+                            <h5>Black Widow</h5>
+                            <p>Action, Adventure, Sci-Fi</p>
+                            <div class="icon-detail">
+                            <button type="submit" class="icon-detail-button">Update</button>
+                            </div>
+                            <div class="icon-detail delete">
+                                <button type="submit" class="icon-detail-button delete">Delete</button>
+                            </div>
+
+                        </div>
+                        <div class="up-icon">
+                            <img src="assets/img-icon4.png" alt="img">
+                            <h5>Black Widow</h5>
+                            <p>Action, Adventure, Sci-Fi</p>
+                            <div class="icon-detail">
+                            <button type="submit" class="icon-detail-button">Update</button>
+                            </div>
+                            <div class="icon-detail delete">
+                                <button type="submit" class="icon-detail-button delete">Delete</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="page">
+            <div class="page-wrap">
+                <div class="page-box">1</div>
+                <div class="page-box">2</div>
+                <div class="page-box">3</div>
+                <div class="page-box">4</div>
+            </div>
+            <div></div>
+        </div>
+
+    </section>
+    <section></section>
+
+</main>
+
+
+    <footer class="ft-hp">
+        <div class="ft-hp-wrap">
+            <div class="logo-ft">
+                <div class="logo-ft-wrap">
+                    <img src="Assets/logo-footer.png" alt="logo">
+                </div>
+                <div class="par-ft">
+                    <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.
+                    </p>
+                </div>
+            </div>
+            <div class="ft-epl">
+                <div class="epl-header">
+                    <h4 class="hd-exp">Explore<h4>
+                </div>
+                <div class="epl-content">
+                    <p>
+                        <a href="Index.html">Home</a>
+                    </p>
+                    <p>
+                        <a href="viewAll.html">List Movie</a>
+                    </p>
+                </div>
+            </div>
+            <div class="ft-sponsor">
+                <div class="epl-header2">
+                    <h4 class="hd-exp">Our Sponsor<h4>
+                </div>
+                <div class="sponsor-logo">
+                    <ul>
+                        <li><img src="assets/img-footer1.png" alt="img-logo1"></li>
+                        <li><img src="assets/img-footer2.png" alt="img-logo2"></li>
+                        <li><img src="assets/img-footer3.png" alt="img-logo3"></li>
+                    </ul>
+                    <!-- <img src="assets/img-footer1.png" alt="img-logo1"> <br>
+                    <img src="assets/img-footer2.png" alt="img-logo2"> <br>
+                    <img src="assets/img-footer3.png" alt="img-logo3"> -->
+                </div>
+            </div>
+            <div  class="fu-item-wrap">
+                <div class="epl-header">
+                    <h4 class="hd-exp follow-us">Follow Us<h4>
+                </div>
+                <ul>
+                    <li>
+                        <div class="logo-wrapper">
+                            <img src="assets/logo-fb.png" alt="facebook"> 
+                        </div> 
+                        <div class="text-ft">
+                            Tickitz Cinema id
+                        </div> 
+                    </li>
+                    <li><img src="assets/logo-ig.png.png" alt="instagram"> 
+                        <div class="text-ft">
+                            tickitz.id
+                        </div>
+                    </li>
+                    <li><img src="assets/logo-twitter.png" alt="twitter"> 
+                        <div class="text-ft">
+                            tickitz.id
+                        </div>
+                    </li>
+                    <li><img src="assets/logo-yt.png" alt="youtube"> 
+                        <div class="text-ft">
+                            Tickitz Cinema id
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-copyright">
+            <p class="bottom-footer">
+            &#169;2020 Tickitz. All Rights Reserved.
+        </p> 
+        </div>
+    </footer>
+
+</body>
+</html>

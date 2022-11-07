@@ -1,0 +1,3248 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap%22');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap%22');
+
+body {
+    margin: 0px;
+    height: 100vh;
+}
+
+main.container {
+  display: flex;
+}
+
+/* CSS for container left */
+.con-left {
+    width: 65%;
+    height: 100%;
+}
+
+.wrap{
+    background-image: url(Assets/Mask\ Group.png);
+    
+    background-size: cover;
+  }
+
+  .overlay{
+    background: rgba(43, 21, 107, 0.8);
+    height: 100vh;
+  }
+
+.img-conten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrp {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrp.logo{
+  padding: 80px 112px;
+  overflow-y: scroll;
+}
+
+.wrp h3 {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+  margin: 100px 0 22px;
+}
+.wrp p {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.007em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 66px;
+  margin-top: 22px;
+}
+
+.wrp .step {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.img-conten.logo{
+  padding: 80px 112px;
+  overflow-y: scroll;
+}
+
+.img-conten h3 {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+  margin: 100px 0 22px;
+}
+.img-conten p {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.007em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 66px;
+  margin-top: 22px;
+}
+
+.img-conten .step {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.wraper {
+  display: flex;
+  align-items: baseline;
+}
+.wraper > .step {
+      border: 2px solid #FFFFFF;
+      border-radius: 50%;
+      background-color: transparent;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 46px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.005em;
+      color: #FFFFFF;
+    }
+
+.wraper .coloring {
+  background-color: white;
+  color: rgba(41, 3, 65, 0.5);
+}
+.wraper > label {
+  margin-left: 42px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.6);
+    }
+
+.slogan {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    letter-spacing: 0.003em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* CSS for container right */
+.con-right {
+    flex-basis: 35%;
+    padding-left: 83px;
+    padding-right: 83px;
+    padding-top: 176px;
+    overflow: scroll;
+   }
+
+   .con-right .logo {
+    display: none;
+   }
+.con-right.sign-up {
+  flex-basis: 35%;
+  padding-left: 83px;
+  padding-right: 83px;
+  padding-top: 122px;
+  overflow: scroll;
+ }
+
+   .con-right h1 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.005em;
+    color: #121212;
+    
+   }
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    letter-spacing: 0.003em;
+    color: #121212;
+    /* padding-left: 83px; */
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.description {
+    /* padding-left: 83px; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.007em;
+    color: #AAAAAA;
+    margin-bottom: 38px;
+}
+
+
+input.sub{
+    background: #FCFDFE;
+    box-sizing: border-box;
+    border: 1px solid #DEDEDE;
+    border-radius: 16px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 24px;
+    width: 100%;
+  
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 83px; */
+    font-family: 'Mulish';
+  }
+
+  label {
+    margin-bottom: 12px;
+    margin-top: 25px;
+  }
+  label:nth-child(1){
+    margin-top: 0;
+  }
+
+  .submit {
+    margin-top: 32px;
+    background: #5F2EEA;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    border:none;
+    background-color: #5F2EEA;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-sign a .submit, .booknow-button a button,.submit > a .sub {
+    cursor: pointer;
+  }
+
+
+
+  button.sub {
+    border-radius: 16px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    letter-spacing: 0.75px;
+    color: #F7F7FC;
+    border: 0px;
+    padding: 0;
+    background-color: #5F2EEA;
+    width: auto;
+    height: auto;
+  }
+
+.con-right .pw-icon {
+  position: relative;
+ }
+.con-right > .form > .pw-icon > img.eye {
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+}
+
+.profile-borderright .pw-icon {
+  position: relative;
+ }
+.profile-borderright .pw-icon > img.eye {
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+}
+
+footer.pg1 {
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.005em;
+
+  color: #8692A6;
+    }
+
+
+/* Style Home Page 5 */
+/* NAV */
+main {
+  display: block;
+}
+
+
+.auth-nav {
+  display: flex;
+  padding: 36px 130px;
+  align-items: center;
+}
+.auth-nav.second {
+  display: flex;
+  padding: 36px 70px;
+  align-items: center;
+  position: relative;
+}
+.nav-hiden {
+  display: none;
+}
+.auth-nav.second .wrap-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.auth-nav.second .wrap-nav .flex-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-nav.second .wrap-nav .dropdown-nav {
+  display: none;
+}
+
+.auth-nav.second .wrap-nav .dropdown-nav > input{
+  background: #FCFDFE;
+  border: 1px solid #DEDEDE;
+  border-radius: 16px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+  padding: 15px 50px;
+}
+
+.drop-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-flex > a {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+  text-decoration: none;  
+  padding: 12px 16px;
+}
+.picture-search {
+  margin-right: 120px;
+}
+.picture-search:nth-child(2) {
+  margin: 0;
+}
+.wrap-nav .picture-search:hover > .dropdown-nav {
+  display: block;
+}
+.auth-nav.second .wrap-nav .pic-nav:hover {
+  display: block;
+}
+
+
+.auth-nav > .icon-nav {
+  flex:1;
+}
+
+
+.icon-nav a {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #414141;
+  text-decoration: none;
+  margin-right: 32px;
+  margin-left: 80px;
+}
+.icon-nav.third a {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #414141;
+  text-decoration: none;
+  margin-right: 32px;
+  margin-left: 0;
+}
+.icon-nav a:nth-child(2) {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #414141;
+  text-decoration: none;
+  margin-right: 32px;
+}
+
+
+.icon-sign {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #F7F7FC;
+  background: #5F2EEA;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+}
+.icon-sign button {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #F7F7FC;
+  background: #5F2EEA;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Section top */
+.homepage-top {
+  display: flex;
+  padding: 0 130px;
+  align-items: center;
+  text-align: center;
+}
+
+.homepage-top > .top-left {
+  flex-basis: 50%;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #A0A3BD;
+}
+
+.top-left h3 {
+  color: #5F2EEA;
+}
+
+.homepage-top.top-right {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section center */
+.homepage-center {
+  padding: 0 130px;
+  justify-content: center;
+  align-items: center;
+  background: #F5F6F8;
+  padding-bottom: 100px;
+}
+
+.header-hp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+}
+
+.header-hp .nowShowing {
+  flex: 1;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #5F2EEA;
+}
+
+.header-hp .nowShowing h3{
+border-bottom: 3px solid #5F2EEA;
+display: inline;
+padding-bottom: 16px;
+}
+
+.homepage-center a {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.15px;
+  color: #5F2EEA;
+  text-decoration: none;
+}
+
+.img-hp {
+  display: flex;
+  overflow-x: scroll;
+  height: 550px;
+}
+
+.img-hp.height{
+  height: 100%;
+}
+
+.img-hp .img-content {
+  margin-top: 56px;
+  padding: 32px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.img-hp .img-content .description-picture {
+  position: relative;
+}
+.img-hp .img-content:hover{
+  display: block;
+  background: #FFFFFF;
+  border: 0.5px solid #DEDEDE;
+  box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);
+  border-radius: 8px;
+}
+.img-hp .img-content:hover > .description-picture .dropdown {
+  display: block;
+  background: #FFFFFF;
+}
+
+.img-hp .img-content:hover > .description-picture .dropdown > h5{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #14142B;
+  }
+
+  .img-hp .img-content:hover > .description-picture .dropdown > p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #A0A3BD;
+    }
+  
+.img-hp .img-content:hover > .description-picture .dropdown > div{
+  border: 1px solid #5F2EEA;
+  border-radius: 4px;
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-hp .img-content:hover > .description-picture .dropdown > div .btn-dropdown{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #5F2EEA;
+  background-color: transparent;
+  border: none;
+}
+.img-hp .img-content .description-picture .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #eee;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  left: -10px;
+  top: -5px;
+  z-index: 99;
+}
+.btn {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: purple;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+/* Section Bottom */
+.homepage-bott {
+  padding: 0 130px;
+  margin-top: 120px;
+}
+
+.homepage-bott .upMovie {
+  flex: 1;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #14142B;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-bott a {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.15px;
+    color: #5F2EEA;
+    text-decoration: none;
+  }
+
+.mv-month {
+  margin-top: 40;
+  display: flex;
+  overflow-x: scroll;
+}
+.mv-month .wrap-month {
+
+}
+
+.wrap-month .but-month {
+  border:1px solid #5F2EEA;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 27px;
+  margin-right: 16px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #5F2EEA;
+  background-color: white;
+}
+.wrap-month .but-month.active{
+  background: #5F2EEA;
+  box-shadow: 0px 8px 30px rgba(95, 46, 234, 0.3);
+  border-radius: 4px;
+  padding: 12px 27px;
+  margin-right: 16px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.wrap-UpMovie {
+  margin-top: 56px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex;
+}
+.wrap-UpMovie .up-icon {
+  padding: 32px;
+  display: inline-block;
+  background: #FFFFFF;
+  border: 0.5px solid #DEDEDE;
+  border-radius: 8px;
+  margin-right: 24px;
+}
+
+.wrap-UpMovie .up-icon h5{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #14142B;
+}
+
+.wrap-UpMovie .up-icon p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #A0A3BD;
+  margin-bottom: 40px;
+}
+.up-icon .icon-detail {
+  margin-bottom: 10px;
+  border: 1px solid #5F2EEA;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  cursor: pointer;
+}
+.up-icon .icon-detail.delete {
+  color: #ED2E7E;
+  border: 1px solid #ED2E7E;
+}
+
+.up-icon .icon-detail .icon-detail-button {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #5F2EEA;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* MOVIEGOERS */
+
+.moviegoers {
+  margin: 130px 130px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(186, 186, 186, 0.3);
+  border-radius: 8px;
+  padding-top: 48px ;
+  padding-bottom: 48px ;
+}
+
+.moviegoers .movie-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moviegoers .movie-header .movie-item h4{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 114%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #4E4B66;
+  margin: 0;
+  }
+  .moviegoers .movie-header .movie-item h1{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 114%;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #5F2EEA;
+    margin-bottom: 0;
+    }
+
+.jNow .jwrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  border: 2px solid #DEDEDE;
+  border-radius: 4px;
+  border: none;
+}
+.jwrap .iptEmail {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.75px;
+  color: #A0A3BD;
+  padding: 15px 24px;
+  border: 2px solid #DEDEDE;
+  border-radius: 4px;
+}
+.jwrap .btn-join button{
+  background: #5F2EEA;
+  border-radius: 4px;
+  margin-left: 16px;
+  padding: 17px 29px;
+  border: none;
+}
+
+.jwrap .btn-join .btn-join-icon{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.bot-jNow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.desc-jNow {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #6E7191;
+  text-align: center;
+}
+
+/* FOOTER HP */
+.ft-hp {
+  padding-top: 108px;
+  padding-left: 130px;
+  padding-right: 130px;
+  display: flex;
+  flex-direction: column;
+}
+.ft-hp-wrap {
+  display: flex;
+}
+
+.ft-hp-wrap .logo-ft {
+  margin-bottom: 30;
+  margin-right: 30px;
+  flex: 1;
+}
+
+
+.ft-hp-wrap .par-ft {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #6E7191;
+  max-width: 290px;
+}
+
+.ft-hp-wrap .ft-sponsor {
+  flex: 1;
+}
+
+.ft-sponsor .sponsor-logo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ft-sponsor .sponsor-logo ul li {
+  margin-bottom: 25px;
+}
+
+.ft-hp-wrap .ft-epl {
+  flex: 1;
+}
+
+.ft-hp-wrap .epl-content {
+  flex-direction: column;
+}
+
+.hd-exp{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  margin-bottom: 31px;
+}
+
+.hd-exp.follow-us{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  margin-bottom: 34px;
+} 
+
+.input-nav{
+  background: #FFFFFF;
+  /* Border and Line */
+  position: relative;
+  border: 1px solid #DEDEDE;
+  border-radius: 4px;
+  margin: 40px 24px
+  
+}
+.search-dropdown {
+  position: absolute;
+  top: 8px;
+  left: 23px;
+
+}
+
+.input-nav input{
+  border: none;
+  padding: 11px 52px;
+  width: 100%;
+}
+.nav-dropdwon-text {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  border-top: 0.5px solid #DEDEDE;
+  border-bottom: 0.5px solid #DEDEDE;
+    text-align: center;
+  letter-spacing: 0.75px;
+  padding: 16px;
+  
+  /* Text - Title */
+  
+  color: #14142B;
+}
+.nav-dropdwon-text a {
+  text-decoration: none;
+}
+.epl-content a{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #4E4B66;
+  text-decoration: none;
+}
+.epl-content .fu-font a{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #6E7191;
+}
+
+.fu-item-wrap .epl-content .text-followus {
+  display: flex;
+}
+
+.fu-item-wrap {
+  flex: 1;
+}
+.fu-item-wrap ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.fu-item-wrap ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.fu-item-wrap ul li img{
+  margin-right: 20px;
+}
+
+.fu-item-wrap ul li .logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fu-item-wrap ul li .text-ft {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #6E7191;
+}
+
+
+.fu-wrap {
+  margin-left: 129px;
+}
+.bottom-footer {
+  text-align: center;
+  padding: 50px;
+  width: auto;
+  height: auto;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #4E4B66;
+}
+
+.listmovie {
+  padding: 36px 130px;
+  background-color: #F5F6F8;
+}
+.listmovie .listmovie-wrap {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.listmovie .listmovie-wrap .listmovie-title {
+  flex: 1;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  display: flex;
+  color: #000000;
+}
+
+.listmovie .listmovie-wrap .listmovie-sort {
+  background: #FCFDFE;
+  border: 1px solid #DEDEDE;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.listmovie .listmovie-sort .listmovie-sortwrap select{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+  border: none;
+  background-color: transparent;
+  padding: 15px 15px;
+}
+
+.listmovie .listmovie-wrap .listmovie-search {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FCFDFE;
+  border: 1px solid #DEDEDE;
+  border-radius: 16px;
+}
+
+.listmovie .listmovie-search .listmovie-searchwrap > input {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+  border: none;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.grid-listmovie {
+  background-color: #F5F6F8;
+}
+.grid-listmovie .grid-listmovie-background {
+  background-color: white;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap {
+  padding: 0 70px;
+  padding-bottom: 40px;
+}
+
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wraptop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
+}
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wrapbottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap .up-icon {
+  padding: 32px;
+  display: inline-block;
+  background: #FFFFFF;
+  border: 0.5px solid #DEDEDE;
+  border-radius: 8px;
+  margin-right: 24px;
+  margin-top: 40px;
+}
+
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap .up-icon h5{ 
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #14142B;
+}
+
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap .up-icon p{ 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #A0A3BD;
+  margin-bottom: 40px;
+}
+
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap .up-icon .icon-detail{
+  border: 1px solid #5F2EEA;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  cursor: pointer;
+}
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap .up-icon .icon-detail.delete {
+  border: none;
+}
+
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap .up-icon .icon-detail .icon-detail-button{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #5F2EEA;
+  background-color: transparent;
+  border: none; 
+  cursor: pointer;
+}
+
+.grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap .up-icon .icon-detail.delete .icon-detail-button.delete {
+  border: 1px solid #ED2E7E;
+  width: 100%;
+  color: #ED2E7E;
+}
+
+.page {
+  background-color: #F5F6F8;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+.page .page-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page .page-wrap .page-box {
+  background: #FFFFFF;
+  border: 0.5px solid #DEDEDE;
+  border-radius: 8px;
+  padding: 3px 15px;
+  margin-right: 8px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+}
+
+.page .page-wrap .page-box:nth-child(1){
+  background: #5F2EEA;
+  box-shadow: 0px 8px 16px rgba(95, 46, 234, 0.24);
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.moviedetail-top {
+  padding: 40px 70px 0;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.moviedetail-top .detail-top-img {
+  border: 2px solid #DEDEDE;
+  border-radius: 16px;
+  max-height: 462px;
+}
+
+.moviedetail-top .detail-top-img .img-top {
+  padding: 47px;
+}
+
+.detail-top-text {
+  margin-left: 56px;
+  flex: 1;
+}
+.detail-top-text .top-text-wrap {
+  margin-bottom: 24px;
+}
+.moviedetail-top .detail-top-text .top-text-wrap .movie-title{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: #14142B;
+}
+
+.moviedetail-top .detail-top-text .top-text-wrap .movie-category{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+}
+.moviedetail-top .detail-top-text .top-text-wrap .movie-wrap {
+display: flex;
+}
+
+.moviedetail-top .detail-top-text .movie-detail-top {
+  display: block;
+}
+
+.moviedetail-top .detail-top-text .movie-detail-top .movie-detail-releasedate {
+  margin-right: 100px;
+  margin-bottom: 16px;
+}
+
+
+.moviedetail-top .detail-top-text .top-text-wrap .movie-detail-title {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  color: #8692A6;
+}
+
+.moviedetail-top .detail-top-text .top-text-wrap .movie-detail-description {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #121212;
+}
+
+.moviedetail-top .detail-top-text .movie-detail-bottom{
+  display: block;
+}
+
+.moviedetail-top .detail-top-text .movie-detail-bottom .movie-detail-duration {
+  margin-bottom: 16px;
+}
+.moviedetail-top .detail-top-text .synopsis-text {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  margin-top: 16px;
+}
+
+.moviedetail-top .detail-top-text .synopsis-info > p{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+  padding-top: 4px;
+}
+
+.moviedetail-center {
+  background: #F5F6F8;
+  padding: 70px 80px 46px;
+}
+
+.moviedetail-center .moviedetail-center-title .moviedetail-center-title-text {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #14142B;
+  text-align: center;
+}
+
+.moviedetail-date-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.moviedetail-date-location .date-border {
+  background: #EFF0F6;
+  border-radius: 6px;
+  margin-right: 24px;
+}
+
+.moviedetail-date-location .date-border #date {
+ background-color: transparent; 
+ font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #4E4B66;
+  border: none;
+  padding: 14px 149px 14px 66px;
+}
+
+.moviedetail-date-location .date-border #location {
+  background-color: transparent;
+  border: none;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #4E4B66;
+  padding: 14px 127px 14px 66px;
+}
+
+.date-border.second {
+  position: relative;
+}
+
+.date-border.second .location-icon{
+  position: absolute;
+  top: 28%;
+  right: 85%;
+}
+
+
+.booknow-parent-top {
+  display: flex;
+  justify-content: center;
+}
+
+.booknow-parent .booknow-wrap {
+  padding-top: 35px;
+  padding-left: 41px;
+  background-color: #FFFFFF;
+  display: flex;
+  border-radius: 8px;
+  margin-top: 72px;
+  margin-right: 32px;
+}
+.booknow-parent .booknow-wrap.bottom {
+margin-top: 30px;
+}
+
+.booknow-wrap .title-booknow-wrap {
+  display: flex;
+}
+
+.booknow-wrap .title-booknow-wrap .icon-booknow {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;  
+}
+
+.booknow-wrap .title-booknow-wrap .icon-booknow .img-booknow2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booknow-wrap .title-booknow-wrap .info-booknow {
+  flex: 1;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.booknow-wrap .title-booknow-wrap .info-booknow .text-icon{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.booknow-wrap .title-booknow-wrap .info-booknow .text-info{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.75px;
+  color: #6E7191;
+}
+.clock-wrap {
+  margin-top: 16px;
+}
+
+.clock-wrap .clock-flex {
+  display: flex;
+}
+.clock-wrap .clock-flex .text-clock {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #A0A3BD;
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
+.clock-wrap .clock-flex .text-clock.available {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+}
+.clock-wrap .clock-flex .text-clock.selected{
+  color: #5F2EEA;
+}
+
+.price-wrap {
+  display: flex;
+  flex: 1;
+  margin-top: 8px;
+}
+.price-wrap .text-price {
+  flex: 1;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.75px;
+  color: #6B6B6B;
+}
+.price-wrap .text-seat {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.75px;
+  color: #000000;
+  margin-right: 24px;
+}
+
+.booknow-wrap-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5F2EEA;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border-radius: 4px;
+  margin: 32px 24px 24px 0;
+}
+
+.booknow-wrap .booknow-button #booknow {
+  background-color: transparent;
+  border: none;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #F7F7FC;
+}
+.viewmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 66px;
+}
+.viewmore .line {
+  border: 0;
+  border-bottom: 1px solid #DEDEDE;
+  width: 100%;
+}
+.viewmore .viewmore-wrap {
+  position: absolute;
+  padding: 0 48px;
+  background-color: #F5F6F8;
+}
+.viewmore .viewmore-wrap a{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #5F2EEA;
+  text-decoration: none;
+}
+
+.paymentpage {
+  background: #F5F6F8;
+  display: flex;
+  padding-top: 56px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.paymentpage .wraper-paymentpage {
+  flex-basis: 65%;
+}
+
+.paymentpage .title-paymentpage{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+
+.paymentpage .wraper-paymentpage .paymentinfo {
+flex: 60%;
+margin-bottom: 48px;
+}
+
+.paymentpage .personalinfo {
+  margin-left: 24px;
+}
+.paymentpage  .personalinfo .personalinfo-bg {
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 47px 40px;
+}
+
+.paymentpage .personalinfo .personalinfo-bg .phonenumber {
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid #DEDEDE;
+  border-radius: 4px;
+  padding: 5px 0;
+}
+
+.paymentpage .personalinfo .personalinfo-bg .phonenumber input {
+  border: none;
+  background-color: transparent;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  align-items: center;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+  padding-left: 20px;
+}
+.paymentpage .personalinfo .personalinfo-bg .phonenumber > input:nth-child(1) {
+  border-right: 1px solid #DEDEDE;
+  background-color: transparent;
+  width: 40px;
+  padding: 20px 30px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  align-items: center;
+  letter-spacing: 0.75px;
+  color: #4E4B66;  
+}
+.paymentpage .personalinfo .personalinfo-bg .personalinfo-text {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #696F79;
+  margin-bottom: 14px;
+}
+
+.paymentpage .personalinfo .personalinfo-bg .personalinfo-form {
+  border: 1px solid #DEDEDE;
+  border-radius: 4px;  
+  margin-bottom: 32px;
+}
+
+.paymentpage .personalinfo .personalinfo-bg .personalinfo-form .input-personalinfo {
+  border: none;
+  padding: 20px 32px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;  
+  width: 450px;
+}
+
+.borderinfo-paymentpage {
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.paymentinfo .infopayment-wraper{
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.paymentinfo .infopayment-wraper.second{
+margin-top: 24px;
+}
+
+.personalinfo .personalinfo-bottom {
+margin-top: 32px;
+background: rgba(244, 183, 64, 0.3);
+border-radius: 4px;
+}
+.personalinfo .personalinfo-bottom .bottom-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 84px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  color: #4E4B66;
+  position: relative;
+}
+
+.personalinfo .personalinfo-bottom .bottom-wrap > img {
+  position: absolute;
+  left: 125px;
+  top: 15px;
+}
+.borderinfo-paymentpage .borderinfo-wrap {
+  padding: 48px 40px;
+}
+
+.borderinfo-paymentpage .line-infopayment {
+  padding: 0 40px;
+}
+
+.borderinfo-paymentpage .infopayment-left {
+  flex: 1;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #6B6B6B;
+}
+
+.borderinfo-paymentpage .infopayment-right {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+.borderinfo-paymentpage .infopayment-right.total {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.25px;
+
+  color: #000000;
+}
+
+.choosepayment.view {
+  display: flex;
+}
+.choosepayment.hide {
+  display: none;
+}
+.paymentpage .wraper-choosepayment {
+  flex: 60%;
+}
+
+.paymentpage .blank-wraper {
+  flex: 40%;
+}
+
+.paymentpage .choosepayment-container {
+  padding-bottom: 24px;
+}
+.paymentpage .choosepayment-container .choosepayment-title {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #14142B;
+}
+
+.paymentpage .choosepayment-bg {
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.paymentpage .choosepayment-bg .choosepayment-padding {
+padding-top: 56px;
+
+}
+
+.paymentpage .choosepayment-bg .choosepayment-padding .choosepayment-flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.paymentpage .choosepayment-bg .choosepayment-padding .choosepayment-flex .choosepayment-border {
+  border: 2px solid #DEDEDE;
+  border-radius: 8px;
+  width: 146px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.choosepayment-padding .choosepayment-or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 66px;
+}
+
+.choosepayment-or .line {
+  border: 0;
+  border-bottom: 1px solid #DEDEDE;
+  width: 100%;
+}
+
+.choosepayment-or .or-wrap {
+  position: absolute;
+  padding: 0 48px;
+  background-color: white;
+}
+
+.choosepayment-or .or-wrap > p {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #A0A3BD;
+}
+
+.choosepayment-padding .choosepayment-bottom {
+  margin-top: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 56px;
+}
+.choosepayment-padding .choosepayment-bottom > p {
+  margin: 0;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #6E7191;
+}
+
+.choosepayment-padding .choosepayment-bottom > p > a {
+  text-decoration: none;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #5F2EEA;
+}
+
+.previousstep {
+  padding-top: 40px;
+}
+
+.previous-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 72px;
+}
+.previous-wrap .previous-border {
+  border: 2px solid #5F2EEA;
+  border-radius: 4px;
+  width: 300px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.previous-border a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.previous-wrap .previous-button {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #5F2EEA;
+  padding: 11px 14px;
+  border: none;
+  background-color: #F5F6F8;
+  cursor: pointer;
+  width: 100%;
+}
+
+.previous-wrap .previous-button.active{
+  height: 56px;
+  background: #5F2EEA;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #F7F7FC;
+  cursor: pointer;
+  width: 100%;
+}
+.nav-dropdown {
+  display: none;
+  background-color: white;
+}
+.profilepage {
+  background-color: #F5F6F8;
+  padding: 56px 70px 36px;
+  overflow: scroll;
+}
+
+.profile-wrap {
+  display: flex;
+}
+
+.profilepage .profile-borderleft {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(186, 186, 186, 0.08);
+  border-radius: 24px;
+  padding: 40px;
+  flex: 20%;
+}
+.profilepage .profile-borderleft .profile-logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profilepage .profile-borderleft .profile-subname {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #4E4B66;  
+  margin-bottom: 40px;
+}
+
+.profilepage .profile-borderleft .profile-logout button{
+  background: #5F2EEA;
+  border-radius: 16px;
+  width: 187px;
+  height: 57px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #F7F7FC;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+.profilepage .profile-borderleft .profile-name {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #14142B;
+  margin-bottom: 4px;
+}
+.profilepage .profile-borderleft .profile-tittle {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+}
+.profilepage .profile-borderleft .profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.profilepage .profile-borderright {
+  flex: 80%;
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin-left: 32px;
+  height: 84px;
+}
+.profilepage .profile-borderright .profile-menu {
+  display: flex;
+  padding: 25px 48px;
+}
+.profile-menu a {
+  text-decoration: none;
+}
+.lineupdatepassword {
+  border-right: 2px solid white;
+  height: 60px;
+  position: absolute;
+  top: 68px;
+  left: 27px;
+}
+.lineupdatepassword2 {
+  border-right: 2px solid white;
+  position: absolute;
+  height: 61px;
+  top: 180px;
+  left: 27px;
+}
+.lineupdatepassword3 {
+  border-right: 2px solid white;
+  position: absolute;
+  height: 61px;
+  top: 295px;
+  left: 27px;
+}
+
+.step-warper {
+  position: relative;
+}
+.profilepage .profile-borderright .profile-menu .menu-setting {
+  margin-right: 56px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  color: #AAAAAA;
+}
+
+.profilepage .profile-borderright .profile-menu .menu-setting.active {
+  color: #14142B;
+  border-bottom: 2px solid #5F2EEA;;
+  padding-bottom: 25px;
+}
+
+.profile-borderright .detailinformation {
+  background: #FFFFFF;
+  border-radius: 24px;
+  margin-top: 23px;
+  padding: 0 32px;
+}
+
+.form-detailinfo {
+  padding-top: 49px; 
+  padding-bottom: 49px; 
+  padding-right: 32px;
+}
+
+.form-detailinfo .personalinfo-text.detailinfo {
+  color: #4E4B66;
+  margin-bottom: 12px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  margin-bottom: 14px;
+  margin-top: 24px;
+}
+
+.profile-borderright .detailinformation .text-detailinfo{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #14142B;  
+  padding: 40px 0 16px;
+}
+.detailinformation .detail-wrap {
+  padding: 0 32px;
+}
+.form-detailinfo .personalinfo-form.detailinfo {
+  background: #FCFDFE;
+  border: 1px solid #DEDEDE;
+  border-radius: 16px;
+}
+.form-detailinfo .personalinfo-form.detailinfo .input-personalinfo.detailinfo {
+  font-size: 16px; 
+  line-height: 20px;  
+  border: none;
+  padding: 22px 24px;
+  width: 300px;
+  font-family: 'Mulish';
+  font-style: normal;
+  line-height: 23px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;  
+  border-radius: 16px;
+  width: 92;
+}
+
+.detailinformation .detail-flex {
+display: flex;
+}
+
+.detailinformation .detail-flex .detail-colomn {
+  flex: 1;
+}
+.borderright-wrap {
+  flex: 80%;
+}
+
+.orderhistory-bg .orderhistory-conten{
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  padding: 40px 50px;
+}
+.orderhistory-bg:nth-child(4) {
+  padding-bottom: 72px;
+}
+.orderhistory-bg .orderhistory-conten.bottom {
+  margin-bottom: 24px;
+}
+.orderhistory-bg .orderhistory-conten .seedetail >a{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.75px;
+  color: #AAAAAA;  
+  text-decoration: none;
+}
+.button-wrap{
+  display: flex;
+  flex: 1;
+}
+.time-order {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  color: #AAAAAA;
+}
+
+.title-movie{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+  color: #000000;  
+}
+
+.button-ticket .button-text{
+  background: #00BA88;
+  border-radius: 4px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #F7F7FC;  
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.button-ticket a {
+  text-decoration: none;
+}
+.button-ticket .button-text.used {
+  background: #6E7191;
+  border-radius: 4px;
+}
+.orderhistory-flex hr {
+  border: 1px solid #DEDEDE;
+  margin: 0;
+}
+
+.orderhistory-text {
+  flex: 1;
+}
+.orderhistory-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orderhistory-flex {
+  
+}
+.detailinformation > hr {
+  border: 1px solid #DEDEDE;
+}
+
+.detail-colomn .form-detailinfo .phonenumber {
+  background: ##FCFDFE;
+  border-radius: 6px;
+  border: 1px solid #DEDEDE;
+  border-radius: 16px;
+  padding: 5px;
+
+}
+
+.detail-colomn .form-detailinfo .phonenumber input {
+  border: none;
+  background-color: transparent;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  align-items: center;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+  padding-left: 20px;
+}
+.detail-colomn .form-detailinfo .phonenumber > input:nth-child(1) {
+  border-right: 1px solid #DEDEDE;
+  background-color: transparent;
+  width: 40px;
+  padding: 20px 30px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  align-items: center;
+  letter-spacing: 0.75px;
+  color: #4E4B66;  
+}
+
+.profile-borderright .button-profilpage {
+margin-top: 17px;
+}
+
+.profile-borderright .button-profilpage .button-border {
+  background: #5F2EEA;
+  border-radius: 16px;
+  max-width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-borderright .button-profilpage .button-border .button-item {
+  background-color: transparent;
+  border: none;
+  height: 6vh;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #F7F7FC;
+}
+.ticketresult {
+  background-color: #F5F6F8;
+}
+.ticketresult-bg {
+  padding: 72px 190px;
+}
+.ticketresult-bg .ticketresult-border {
+  background-color: white;
+}
+.ticketresult-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  padding-top: 56px;
+}
+.ticketresult-title {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #14142B;
+}
+.ticketresult-padding {
+padding-bottom: 144px;
+}
+
+.ticketresult-infowrap {
+  display: flex;
+}
+
+.ticketresult-right {
+  background: #5F2EEA;
+  display: flex;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  }
+.ticketresultinfo-flex {
+  display: flex;
+}
+.img-QR-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.img-QR-flex .img-right {
+  padding: 50px 35px;
+  background: #F5F6F8;
+  text-align: center;
+}
+.ticketresult-fix {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ticketresult-paddinginfo {
+  padding: 32px 0 56px 34px;
+  width: 70%;
+}
+
+.ticketresult-right .logo-ticketresult{
+  padding: 23px 56px;
+  width: 30%;
+}
+.ticketresult-right .logo-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.ticketresult-subtitle {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  color: #AAAAAA;  
+}
+.ticketresult-detail {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+  color: #14142B;
+  margin-bottom: 16px;
+}
+.ticketresultinfo-margin {
+  margin-right: 130px;
+}
+.ticket-overflow {
+  /* position: relative; */
+  /* border: 1px solid #DEDEDE; */
+  
+}
+.ticketresult-padding .ticket-border {
+  overflow: hidden;
+  max-width: 1000px;
+}
+.ticketresult-detail.price {
+  font-weight: 700;
+  font-size: 24px;
+line-height: 30px;
+letter-spacing: 0.25px;
+}
+.ticketresult-right div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: right;
+  letter-spacing: 0.75px;
+  color: #FFFFFF;
+  width: 40%;
+}
+
+.layout-managemovie {
+  background-color: #F5F6F8;
+}
+
+.formmovie-padding {
+  padding: 56px 70px;
+}
+
+.formmovie-padding .formmovie-title {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  margin-bottom: 24px;
+  color: #000000;  
+}
+.dashboard-flex {
+  display: flex;
+  padding: 51px 70px;
+}
+.title-dashboard {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #000000;  
+
+}
+.graph-dashboard {
+  margin-top: 27px;
+}
+.graph-dashboard.right {
+  background-color: white;
+}
+.formmovie-top {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 56px 40px;
+}
+
+.formmovie-top .formmovie-flex {
+  display: flex;
+}
+.img-bordermanagemovie {
+  background: #FFFFFF;
+  border: 0.5px solid #DEDEDE;
+  border-radius: 6px;
+  padding: 36px;
+}
+.formmovie-topleft {
+  flex: 1;
+  margin-left: 32px;
+}
+.formmovie-topright {
+  flex: 1;
+  margin-left: 48px;
+}
+
+.subformmovie-flex {
+  display: flex;
+}
+.subformmovie-flex div {
+  flex: 1;
+}
+.formmovie-top .button-flex {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 41px;
+}
+
+.formmovie-top .button-flex div:nth-child(1) {
+  margin-right: 23px;
+
+}
+.button-flex .buttonsubmit {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border-radius: 4px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #5F2EEA;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+}
+.button-flex .buttonsubmit.active {
+  color: #F7F7FC;
+  background: #5F2EEA;
+  border: none;
+}
+
+.formmovie-topright .subformmovie-flex div:nth-child(1) {
+  margin-right: 30px;
+}
+.formmovie-top .formmovie-subtitle {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center; 
+  color: #4E4B66;
+  margin: 15px;
+}
+
+.formmovie-top .formmovie-text {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: #4E4B66;
+  background: #FCFDFE;
+  padding: 22px;
+  border: 1px solid #DEDEDE;
+  border-radius: 4px;
+}
+
+.ticket-wrap {
+  position: relative;
+  padding: 0 70px;
+  padding-bottom: 96px;
+}
+
+.ticket-wrap .ticket {
+border: 1px solid #DEDEDE ;
+border-radius: 16px;
+  position: relative;
+}
+
+.ticket-wrap .ticket .header {
+  height: 80px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  background-color: #5F2EEA;
+}
+
+.ticket-wrap .ticket .header .right div{
+  text-align: center;
+}
+
+.ticket-wrap .ticket .content {
+  height: 300px;
+  display: flex;
+}
+
+.ticket .header, .ticket .content {
+  white-space: nowrap;
+}
+.ticket .header .left .text-conten{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket .header .left .text-conten .right-corner{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  /* or 189% */
+  
+  text-align: right;
+  letter-spacing: 0.75px;
+  
+  color: #FFFFFF;
+  
+}
+.ticket .header .left .text-conten div:nth-child(1) {
+  width: 75%;
+}
+
+.ticket .header .left, .ticket .content .left {
+  display: inline-block;
+  height: 100%;
+  width: 70%;
+}
+.ticket .content .left {
+  padding: 32px 56px;
+}
+
+.ticket .header .right, .ticket .content .right {
+  display: inline-block;
+  height: 100%;
+  width: 25%;
+}
+.ticket .content .right div:nth-child(1) {
+  padding-top: 50px;
+ }
+.ticket .content .right {
+width: 100%;
+ }
+
+ .ticket-inner-border {
+  position: relative;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  margin-bottom: 1px;
+ }
+
+.ticket-border .line .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  border: 4px dashed #DEDEDE;
+}
+.ticket-border .line .v-line {
+  height: calc(100% - 50px);
+  text-align: center;
+}
+.ticket-border .line .v-line .cnt {
+  height: 100%;
+  display: inline-block;
+  border: 2px dashed #DEDEDE;
+}
+
+.ticket-border .line {
+  height: 100%;
+  position: absolute;
+  top: -30px;
+  left: 65%;
+}
+.ticket-border .line .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  border: 4px dashed #DEDEDE;
+}
+.layout-orderpageright {
+  flex: 1;
+}
+.orderinfo-bg .orderinfo-logo {
+  text-align: center;
+  padding-top: 39px;
+}
+
+.layout-bg {
+  background-color: #F5F6F8;
+  padding-top: 56px;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+}
+.layout-bg .layout-orderpageleft .layout-orderpageright .orderinfo-margin{
+  margin-bottom: 24px;
+}
+.layout-orderpageleft {
+  display: block;
+  flex: 2;
+
+}
+.layout-orderpageleft h3 {
+  margin: 0px;
+}
+.orderpage-title {
+ margin-bottom: 24px;
+}
+h3.orderpage-alltitle{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+display: flex;
+align-items: center;
+letter-spacing: 0.25px;
+margin-top: 48px;
+margin-bottom: 24px;
+color: #14142B;
+
+}
+.orderinfo-bg {
+  background: #FFFFFF;
+box-shadow: 0px 8px 16px rgba(186, 186, 186, 0.24);
+border-radius: 6px;
+}
+.orderinfo-detail {
+  display: flex;
+  padding: 0 24px;
+  margin-bottom: 16px;
+  
+}
+
+.orderinfo-detail .orderinfo-total {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  /* or 189% */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.75px;
+  
+  color: #000000;
+  
+}
+.orderinfo-detail:nth-last-child(1) {
+  padding: 24px;
+}
+
+.orderinfo-detail .orderinfo-price {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.25px;
+  
+  /* Color Primary */
+  
+  color: #5F2EEA;
+}
+.orderinfo-title {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  /* identical to box height, or 142% */
+  margin-bottom: 32px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  
+  /* Text - Title */
+  
+  color: #14142B;
+}
+.orderinfo-left {
+  flex: 1;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.75px;
+  
+  color: #6B6B6B;
+  
+}
+.orderinfo-right {
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+display: flex;
+align-items: center;
+text-align: right;
+letter-spacing: 0.75px;
+
+/* Text - Title */
+
+color: #14142B;
+
+}
+
+.layout-orderpageleft .layout-flex{
+  
+  margin-right: 24px;
+
+}
+.title-flex {
+  display: flex;
+  background: #FFFFFF;
+border-radius: 6px;
+padding: 37px 48px;
+}
+.title-flex .titleorderpage{
+  flex: 1;
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+display: flex;
+align-items: center;
+letter-spacing: 0.25px;
+
+color: #000000;
+
+}
+
+.title-flex .changemovie {
+  border: 8px solid #EFF0F7;
+border-radius: 4px;
+background-color: transparent;
+}
+.changemovie a {
+  text-decoration: none;
+}
+.title-flex .changemovie button {
+  border: none;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  
+  /* Primary / Default */
+  
+  color: #5F2EEA;
+  padding: 0 6px;
+  
+}
+.yourseat-bg {
+  background-color: white;
+  margin-right: 24px;
+}
+.yourseat-center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.yourseat-bg .screen {
+  padding-top: 100px;
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+}
+
+.chooseYourSeat {
+}
+.grid-right {
+  display: grid;
+grid-gap: 5px;
+grid-template-columns: repeat(7, 30px);
+grid-template-rows: repeat(8, 30px);
+margin-left: 50px;
+
+}
+.screen-bottom {
+  padding-bottom: 105px;
+  padding-left: 231px;
+}
+.screen-bottom .seating-flex {
+display: flex;
+margin-right: 50px;
+margin-top: 15px;
+}
+.screen-bottom .seating-title {
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 34px;
+/* identical to box height, or 189% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.75px;
+
+color: #000000;
+
+}
+.yourseat-bg .grid-seat .sold {
+  background: #6E7191;
+border-radius: 4px;
+}
+
+.yourseat-bg .grid-seat .selected{
+  background: #5F2EEA;
+border-radius: 4px;
+}
+.border-seating {
+  height: 26px;
+  width: 26px;
+  background: #D6D8E7;
+border-radius: 4px;
+margin-right: 10px;
+}
+.border-seating.selected {
+  background: #5F2EEA;
+}
+.border-seating.sold {
+  background: #6E7191;
+}
+.screen-bottom .seating-item {
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+width: 15%;
+display: flex;
+align-items: center;
+letter-spacing: 0.75px;
+
+/* Text - Body */
+
+color: #4E4B66;
+}
+.screen-hr {
+  height: 10p;
+  height: 10px;
+  background: #D6D8E7;
+  border-radius: 4px;
+  width: 55%;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.grid-seat .grid-left {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(8, 30px);
+  grid-template-rows: repeat(8, 30px);
+margin-right: 36px;
+}
+.grid-seat {
+  display: flex;
+}
+.grid-seat .grid-left div, .grid-seat .grid-right div {
+  background: #D6D8E7;
+border-radius: 4px;
+}
+.yourseat-bg .grid-seat .bg-white {
+  background-color: white;
+  text-align: center;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  
+  /* Text - Body */
+  
+  color: #4E4B66;
+  
+}
+.button-orderpage {
+  padding-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.orderpage-button {
+  border: 2px solid #5F2EEA;
+border-radius: 4px;
+background-color: transparent;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.75px;
+width: 235px;
+height: 51px;
+color: #5F2EEA;
+cursor: pointer;
+
+}
+
+.orderpage-button.active {
+  background: #5F2EEA;
+  color: #F7F7FC;
+}
+@media (max-width: 992px) {  
+.paymentpage {
+  flex-direction: column;
+}
+.personalinfo .personalinfo-bottom .bottom-wrap > img {
+  position: absolute;
+  left: 182px;
+  top: 15px;
+}
+.paymentpage .personalinfo .personalinfo-bg .personalinfo-form .input-personalinfo {
+  padding: 20px 0px 20px 10px;
+
+}
+.paymentpage .choosepayment-container .choosepayment-title {
+  margin-top: 15px;
+}
+ .parent-hiden:hover > .nav-dropdown {
+    display: block;
+  }
+  .logo-nav {
+    flex: 1;
+  }
+  .con-left, .auth-nav.second .wrap-nav, .icon-nav {
+  display: none;
+ }
+  
+ .con-right {
+  flex: 1;
+    padding-top: 54px;
+  
+ }
+.con-right .logo {
+  display: block;
+  padding-bottom: 46px;
+}
+  .moviedetail-top{
+    flex-direction: column;
+  }
+  .moviedetail-top .detail-top-img .img-top {
+    justify-content: center;
+    display: flex;
+  }
+  .paymentpage {
+    flex-direction: column;
+  }
+.booknow-parent {
+  overflow: auto;
+}
+.moviedetail-date-location {
+  flex-direction: column;
+}
+.moviegoers {
+  overflow: auto;
+}
+.ft-hp-wrap {
+  flex-direction: column;
+}
+.ft-hp-wrap .epl-content {
+  display: flex;
+  flex-direction: row;
+}
+.ft-hp-wrap .epl-content p:nth-child(1) {
+  width: 30%;
+}
+.ft-sponsor .sponsor-logo ul {
+  display: flex;
+
+}
+.ft-sponsor .sponsor-logo ul li {
+  margin-right: 30px;
+}
+.fu-item-wrap ul li .text-ft {
+  display: none;
+}
+.fu-item-wrap ul {
+  display: flex;
+}
+.fu-item-wrap ul li {
+  margin-right: 30px;
+}
+.bottom-footer {
+  text-align: left;
+  padding: 0;
+}
+.icon-sign {
+  display: none;
+}
+.auth-nav.second {
+  padding: 36px 24px ;
+}
+.profile-wrap {
+  flex-direction: column;
+}
+.profilepage .profile-borderright .profile-menu {
+  margin-top: 50px;
+}
+.profile-borderright .button-profilpage.margin {
+  padding-bottom: 50px;
+}
+.profile-borderleft {
+  display: none;
+}
+.ticketresultinfo-flex {
+  flex-direction: column;
+}
+.ticketresultinfo-margin {
+  margin: 0px;
+  flex: 1;
+}
+.ticketresult-infowrap {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: scroll;
+}
+.ticketresult-right,.ticket-border .line {
+  display: none;
+}
+.ticketresult-paddinginfo {
+  padding: 0;
+}
+.choosepayment.view {
+  display: none;
+}
+.choosepayment.hide{
+  display: block;
+}
+.nav-hiden {
+  display: block;
+}
+.nav-dropdown {
+  position: absolute;
+  width: 100%;
+  top: 120px;
+  left: 0;
+}
+}
+@media (max-width : 768px) {
+  .homepage-top {
+    flex-direction: column;
+  }
+}
+@media (max-width : 425px) {
+  .con-right {
+    padding: 20px;
+  }
+ .con-right .description, .con-right h1 {
+    font-size: 15px;
+  }
+  .form label {
+    font-size: 13px;
+  }
+  .input.sub {
+    font-size: 12px;
+  }
+  button.sub {
+font-size: 13px;
+  }
+}
+@media (max-width : 1200px) {
+  .ticketresult-right, .ticket-border .line  {
+    display: none;
+  }
+  .ticketresult-infowrap {
+    flex-direction: column-reverse;
+  }
+  
+}
