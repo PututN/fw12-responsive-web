@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Manage Movie Page</title>
 </head>
 <body>
@@ -15,14 +16,18 @@
 
         </div>
         <div class="icon-nav">
-                <a href="homepage.html">Home</a>
+                <a href="Index.html">Home</a>
                 <a href="viewAll.html">List Movie</a>
         </div>
         <div class="wrap-nav">
             <div class="flex-nav">
                 <div class="picture-search">
-                    <div><img src="assets/nav-search.png" alt=""></div> 
+                    <div>
+                        <i data-feather="search" class="search" id="search"></i>
+                        <!-- <img src="assets/nav-search.png" alt=""> -->
+                    </div> 
                     <div class="dropdown-nav">
+                        <i data-feather="search" class="search" id="search"></i>
                         <input type="text" placeholder="Search Movie Name ...">
                     </div>
                 </div>
@@ -68,7 +73,8 @@
         </div>
     
     </nav>
-<main class="layout-managemovie">
+
+    <main class="layout-managemovie">
     <section class="formmovie">
         <div class="formmovie-padding">
             <div class="formmovie-title">Form Movie</div>
@@ -219,6 +225,10 @@
                             <div class="icon-detail">
                             <button type="submit" class="icon-detail-button">Update</button>
                             </div>
+                            <div class="icon-detail delete">
+                                <button type="submit" class="icon-detail-button delete">Delete</button>
+                            </div>
+
                         </div>
                         <div class="up-icon">
                             <img src="assets/img-icon4.png" alt="img">
@@ -344,4 +354,9 @@
     </footer>
 
 </body>
+<script>
+    feather.replace()
+
+</script>
+
 </html>
