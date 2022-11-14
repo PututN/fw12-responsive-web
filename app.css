@@ -1999,7 +1999,6 @@ padding-top: 56px;
   background-color: #F5F6F8;
   margin-bottom: 50px;
   padding: 56px 70px 36px 70px;
-  height: 100%;
 }
 
 .profile-wrap {
@@ -2209,9 +2208,6 @@ display: flex;
   border-radius: 8px;
   display: flex;
   padding: 40px 50px;
-}
-.orderhistory-bg:nth-child(4) {
-  padding-bottom: 72px;
 }
 .orderhistory-bg .orderhistory-conten.bottom {
   margin-bottom: 24px;
