@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,54 +10,110 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Mulish:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/regular.min.js"></script>
     <title>Sign In</title>
 </head>
-<body>
-<main class="container">
-    <!-- display none -->
 
-    <!-- display kiri -->
-    <section class="con-left">
-        <div class="wrap">
-            <div class="overlay img-conten">
+<body>
+    <main class="container">
+        <!-- display none -->
+
+        <!-- display kiri -->
+        <section class="con-left">
+            <div class="wrap">
+                <div class="overlay img-conten">
                     <img src="assets/tickitz 1.png" alt="tickitz">
                     <p class="slogan">wait, watch, wow!</p>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- display kanan -->
-    <section class="con-right">
-        <div>
-            <img src="assets/logo-footer.png" alt="" class="logo">
-        </div>
-        <h1 class="title">Sign In</h1>
+        <!-- display kanan -->
+        <section class="con-right">
+            <div>
+                <img src="assets/logo-footer.png" alt="" class="logo">
+            </div>
+            <h1 class="title">Sign In</h1>
             <p class="description">Sign in with your data that you entered during your registration </p>
-            <div class="form">
+            <form class="form" id="form-login">
                 <label for="email">Email</label>
-                <input type="email" placeholder="Write your email" id="password" class="sub">
-                <label for="password">Password</label> 
+                <input type="email" placeholder="Write your email" id="email" class="sub">
+                <label for="password">Password</label>
                 <div class="pw-icon">
                     <input type="password" placeholder="Write your password" id="password" class="sub">
-                    <img src="assets/vektor-eye.png" alt="eye" class="eye">
+                    <i class="fa-regular fa-eye eye" id="eye"></i>
+                    <!-- <i data-feather="eye" class="eye" id="eye"></i> -->
                 </div>
-                
-            </div>
-            <div class="submit">
-                <a href="homepage2.html">
+                <div class="submit">
                     <button type="submit" value="valid" class="sub">Sign In</button>
-                </a>
-            </div>
+                </div>
+
+            </form>
             <footer class="pg1">
                 <p>Forgot your password? <a href="forgotPass.html">Reset now</a> </p>
                 <p>Don't have an account? <a href="signUp.html">Sign Up</a> </p>
             </footer>
-    </section>
+        </section>
 
-    <script>
-        feather.replace()
-      </script>
-</main>
+        <script>
+            feather.replace()
+            //make variable for js
+            const elementEmail = document.getElementById('email');
+            const elementPassword = document.getElementById('password');
+            const elementForm = document.getElementById('form-login')
+            const elementAlert = document.createElement("div")
+            const styleAlert = elementAlert.style
+            const iconEye = document.getElementById('eye')
+            elementForm.addEventListener('submit', (event) => { //ketika di submit akan menjalanjan fungsi
+                event.preventDefault()
+                if (elementEmail.value === "admin@tickitz.com" && elementPassword.value === "12345") {
+                    elementForm.appendChild(elementAlert) //appendChild digunakan untuk menambahkan child diakhir sebuah parent (elemntForm)
+                    elementAlert.innerHTML = "Login Success"
+                    styleAlert.color = "black"
+                    styleAlert.textAlign = 'center'
+                    styleAlert.background = '#B6E2A1'
+                    styleAlert.border = "2px solid black"
+                    styleAlert.padding = "3px"
+                    styleAlert.fontWeight = "900"
+                    styleAlert.borderRadius = "10px"
+                    setInterval(() => {
+                        window.location.href = "homepage2.html"
+                    }, 3000
+                    )
+                } else {
+                    elementForm.appendChild(elementAlert) //appendChild digunakan untuk menambahkan child diakhir sebuah parent (elemntForm)
+                    elementAlert.innerHTML = "Login Failed"
+                    styleAlert.color = "black"
+                    styleAlert.textAlign = 'center'
+                    styleAlert.background = '#F7A4A4'
+                    styleAlert.border = "2px solid black"
+                    styleAlert.padding = "3px"
+                    styleAlert.fontWeight = "900"
+                    styleAlert.borderRadius = "10px"
+                    setTimeout(() => {
+                        elementAlert.remove()
+                    }, 3000)
+                }
+            }
+            )
+            iconEye.addEventListener('click', (event) =>{ //membuat kondisi eye ketika diklik berubah icon dan merubah form type password menjadi type text
+                if (elementPassword.type === 'password') {
+                    iconEye.classList.remove('fa-eye') 
+                    iconEye.classList.add('fa-eye-slash') 
+                    elementPassword.type = "text"
+                    // console.log(iconEye)
+                } 
+                else {
+                    iconEye.classList.remove('fa-eye-slash')
+                    iconEye.classList.add('fa-eye')
+                    elementPassword.type = "password"
+                    // console.log(iconEye)
+                }
+            } )
+        </script>
+    </main>
 </body>
+
 </html>

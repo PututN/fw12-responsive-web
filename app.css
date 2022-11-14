@@ -270,16 +270,14 @@ input.sub{
 
 
 
-  button.sub {
+  div.sub, button.sub {
     border-radius: 16px;
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 28px;
-    /* display: flex;
-    align-items: center;
-    text-align: center; */
+    cursor: pointer;
     letter-spacing: 0.75px;
     color: #F7F7FC;
     border: 0px;
@@ -292,7 +290,7 @@ input.sub{
 .con-right .pw-icon {
   position: relative;
  }
-.con-right > .form > .pw-icon > img.eye {
+.con-right > .form > .pw-icon > .eye, .con-right > .form > .pw-icon > .eye-off {
   position: absolute;
   right: 5%;
   bottom: 30%;
@@ -301,7 +299,7 @@ input.sub{
 .profile-borderright .pw-icon {
   position: relative;
  }
-.profile-borderright .pw-icon > img.eye {
+.profile-borderright .pw-icon > .eye, .profile-borderright .pw-icon > .eye-off {
   position: absolute;
   right: 5%;
   bottom: 30%;
@@ -3082,6 +3080,32 @@ cursor: pointer;
 .paymentpage {
   flex-direction: column;
 }
+.booknow-parent .booknow-wrap.bottom{
+  margin-top: 72px;
+}
+.booknow-parent-top {
+  flex-direction: column;
+}
+.booknow-parent .booknow-wrap {
+  padding-left: 0px;
+  justify-content: center;
+  margin-right: 0px;
+}
+.detail-top-text .top-text-wrap {
+ margin-top: 24px;
+}
+.moviedetail-top .detail-top-img .img-top {
+  padding: 0px;
+}
+.moviedetail-top .detail-top-img .img-top > img{
+  border: 2px solid #DEDEDE;
+  border-radius: 16px;
+  padding: 46px;
+}
+.moviedetail-top .detail-top-img {
+  border: none;
+  border-radius: 0px;
+}
 .personalinfo .personalinfo-bottom .bottom-wrap > img {
   position: absolute;
   left: 182px;
@@ -3144,7 +3168,7 @@ cursor: pointer;
 }
 .ft-sponsor .sponsor-logo ul {
   display: flex;
-
+  flex-wrap: wrap;
 }
 .ft-sponsor .sponsor-logo ul li {
   margin-right: 30px;
@@ -3214,6 +3238,12 @@ cursor: pointer;
   top: 120px;
   left: 0;
 }
+.date-border.second {
+margin-top: 20px;
+}
+.moviedetail-date-location .date-border #date {
+  padding: 14px 60px;
+}
 }
 @media (max-width : 768px) {
   .homepage-top {
@@ -3221,6 +3251,17 @@ cursor: pointer;
   }
 }
 @media (max-width : 425px) {
+  .moviedetail-top {
+    padding: 40px 0px 0;
+  }
+  .moviedetail-center {
+    padding: 70px 20px 46px;;
+  }
+  .ft-hp {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
   .con-right {
     padding: 20px;
   }
@@ -3245,4 +3286,10 @@ font-size: 13px;
     flex-direction: column-reverse;
   }
   
+}
+@media (max-width : 375px) {
+  .moviedetail-center {
+    padding :  70px 1px 46px;
+    
+  } 
 }

@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Mulish:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/regular.min.js"></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -31,29 +33,31 @@
         </div>
 
         <h1 class="title">Sign Up</h1>
-            <p class="description">Fill your additional details</p>
-            <div class="form">
-                <label for="first-name">First Name</label> 
-                <input type="text" placeholder="Write your first name" id="first-name" class="sub">
-                <label for="last-name">Last Name</label>
-                <input type="text" placeholder="Write your last name" id="last-name" class="sub">
-                <label for="phone-number">Phone Number</label> 
-                <input type="number" placeholder="Write your phone number" id="phone-number" class="sub">
-                <label for="email">Email</label>
-                <input type="email" placeholder="Write your email" id="email" class="sub">
-                <label for="password">Password</label> 
-                <div class="pw-icon">
-                    <input type="password" placeholder="Write your password" id="password" class="sub">
-                    <img src="assets/vektor-eye.png" alt="eye" class="eye">
-                </div>
-                
+        <p class="description">Fill your additional details</p>
+        <form class="form">
+            <label for="first-name">First Name</label> 
+            <input type="text" placeholder="Write your first name" id="first-name" class="sub">
+            <label for="last-name">Last Name</label>
+            <input type="text" placeholder="Write your last name" id="last-name" class="sub">
+            <label for="phone-number">Phone Number</label> 
+            <input type="number" placeholder="Write your phone number" id="phone-number" class="sub">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Write your email" id="email" class="sub">
+            <label for="password">Password</label> 
+            <div class="pw-icon">
+                <input type="password" placeholder="Write your password" id="password" class="sub">
+                <!-- <i data-feather="eye" class="eye" id="eye"></i> -->
+                <i class="fa-regular fa-eye eye" id="eye"></i>
+
             </div>
             <div class="submit">
                 <a href="homepage2.html">
-                    <button type="submit" value="valid" class="sub">Sign Up</button>
+                    <div type="submit" value="valid" class="sub">Sign Up</div>
 
                 </a>
             </div>
+               
+        </form>
             <footer class="pg1">
                 <span>Already have account ? <a href="signIn.html">Sign In</a> </span>
               
@@ -63,6 +67,28 @@
   
     <script>
         feather.replace()
+        const elementFirstName = document.getElementById('first-name');
+        const elementLastName = document.getElementById('last-name');
+        const elementPhoneNumber = document.getElementById('phone-number');
+        const elementEmail = document.getElementById('email');
+        const elementPassword = document.getElementById('password');
+        const iconEye = document.getElementById('eye');
+        
+        iconEye.addEventListener('click', (event) =>{ //membuat kondisi eye ketika diklik berubah icon dan merubah form type password menjadi type text
+                if (elementPassword.type === 'password') {
+                    iconEye.classList.remove('fa-eye') 
+                    iconEye.classList.add('fa-eye-slash') 
+                    elementPassword.type = "text"
+                    // console.log(iconEye)
+                } 
+                else {
+                    iconEye.classList.remove('fa-eye-slash')
+                    iconEye.classList.add('fa-eye')
+                    elementPassword.type = "password"
+                    // console.log(iconEye)
+                }
+            } )
+
       </script>
       </main>
 </body>
