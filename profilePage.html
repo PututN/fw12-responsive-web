@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Profil Page</title>
 </head>
 <body>
@@ -15,14 +16,18 @@
 
         </div>
         <div class="icon-nav">
-                <a href="homepage.html">Home</a>
+                <a href="Index.html">Home</a>
                 <a href="viewAll.html">List Movie</a>
         </div>
         <div class="wrap-nav">
             <div class="flex-nav">
                 <div class="picture-search">
-                    <div><img src="assets/nav-search.png" alt=""></div> 
+                    <div>
+                        <i data-feather="search" class="search" id="search"></i>
+                        <!-- <img src="assets/nav-search.png" alt=""> -->
+                    </div> 
                     <div class="dropdown-nav">
+                        <i data-feather="search" class="search" id="search"></i>
                         <input type="text" placeholder="Search Movie Name ...">
                     </div>
                 </div>
@@ -68,122 +73,123 @@
         </div>
     
     </nav>
-<main class="profilepage">
-    <section class="profile-wrap">
-        <div class="profile-borderleft">
-            <div class="profile-tittle">INFO</div>
-            <div class="profile-img">
-                <img src="assets/profile.png" alt="profile">
-            </div>
-            <div class="profile-name">Jonas El Rodriguez</div>
-            <div class="profile-subname">Moviegoers</div>
-            <hr>
-            <div class="profile-logout">
-                <a href="signIn.html">
-                    <button type="submit">Logout</button>
 
-                </a>
-            </div>
-        </div>
-        <div class="profile-right">
-            <div class="profile-borderright">
-                <div>
-                    <div class="profile-menu">
-                        <a href="profilePage.html">
-                            <div class="menu-setting active">Account Settings</div>
-
-                        </a>
-                        <a href="orderHistoryPage.html">
-                            <div class="menu-setting">Order History</div>
-                        </a>
-                    </div>  
+    <main class="profilepage">
+        <section class="profile-wrap">
+            <div class="profile-borderleft">
+                <div class="profile-tittle">INFO</div>
+                <div class="profile-img">
+                    <img src="assets/profile.png" alt="profile">
                 </div>
-                <div class="detailinformation">
+                <div class="profile-name">Jonas El Rodriguez</div>
+                <div class="profile-subname">Moviegoers</div>
+                <hr>
+                <div class="profile-logout">
+                    <a href="signIn.html">
+                        <button type="submit">Logout</button>
+
+                    </a>
+                </div>
+            </div>
+            <div class="profile-right">
+                <div class="profile-borderright">
                     <div>
-                        <div class="text-detailinfo">Details Information</div>
-                        <hr>
+                        <div class="profile-menu">
+                            <a href="profilePage.html">
+                                <div class="menu-setting active">Account Settings</div>
+
+                            </a>
+                            <a href="orderHistoryPage.html">
+                                <div class="menu-setting">Order History</div>
+                            </a>
+                        </div>  
                     </div>
-                    <div class="detail-flex">
-                        <div class="detail-colomn">
-                            <div class="form-detailinfo">
-                                <div class="personalinfo-text detailinfo">Full Name</div>
-                                <div class="personalinfo-form detailinfo">
-                                    <input type="text" value="Jonas" class="input-personalinfo detailinfo">
-                                </div>
-                                <div class="personalinfo-text detailinfo">E-mail</div>
-                                <div class="personalinfo-form detailinfo second">
-                                    <input type="email" value="jonasrodrigu123@gmail.com" class="input-personalinfo detailinfo">
+                    <div class="detailinformation">
+                        <div>
+                            <div class="text-detailinfo">Details Information</div>
+                            <hr>
+                        </div>
+                        <div class="detail-flex">
+                            <div class="detail-colomn">
+                                <div class="form-detailinfo">
+                                    <div class="personalinfo-text detailinfo">Full Name</div>
+                                    <div class="personalinfo-form detailinfo">
+                                        <input type="text" value="Jonas" class="input-personalinfo detailinfo">
+                                    </div>
+                                    <div class="personalinfo-text detailinfo">E-mail</div>
+                                    <div class="personalinfo-form detailinfo second">
+                                        <input type="email" value="jonasrodrigu123@gmail.com" class="input-personalinfo detailinfo">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="detail-colomn">
-                            <div class="form-detailinfo">
-                                <div class="personalinfo-text detailinfo">Last Name</div>
-                                <div class="personalinfo-form detailinfo">
-                                    <input type="text" value="El Rodriguez" class="input-personalinfo detailinfo">
-                                </div>
-                                <div class="personalinfo-text detailinfo">Phone Number</div>
-                                <div class="phonenumber">
-                                    <input type="text" value="+62">
-                                    <input type="number" value="81445687121" >
+                            <div class="detail-colomn">
+                                <div class="form-detailinfo">
+                                    <div class="personalinfo-text detailinfo">Last Name</div>
+                                    <div class="personalinfo-form detailinfo">
+                                        <input type="text" value="El Rodriguez" class="input-personalinfo detailinfo">
+                                    </div>
+                                    <div class="personalinfo-text detailinfo">Phone Number</div>
+                                    <div class="phonenumber">
+                                        <input type="text" value="+62">
+                                        <input type="number" value="81445687121" >
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
-                        
-                    </div>
-                </div> 
-                <div class="button-profilpage">
-                    <div class="button-border">
-                        <button type="submit" class="button-item">
-                            Update changes
-                        </button> 
-                    
                     </div> 
+                    <div class="button-profilpage">
+                        <div class="button-border">
+                            <button type="submit" class="button-item">
+                                Update changes
+                            </button> 
                         
-                </div>
-                <div class="detailinformation">
-                    <div>
-                        <div class="text-detailinfo">Account and Privacy</div>
-                        <hr>
+                        </div> 
+                            
                     </div>
-                    <div class="detail-flex">
-                        <div class="detail-colomn">
-                            <div class="form-detailinfo">
-                                <div class="personalinfo-text detailinfo">New Password</div>
-                                <div class="pw-icon">
-                                    <input type="password" placeholder="Write your password" id="password" class="sub">
-                                    <img src="assets/vektor-eye.png" alt="eye" class="eye">
+                    <div class="detailinformation">
+                        <div>
+                            <div class="text-detailinfo">Account and Privacy</div>
+                            <hr>
+                        </div>
+                        <div class="detail-flex">
+                            <div class="detail-colomn">
+                                <div class="form-detailinfo">
+                                    <div class="personalinfo-text detailinfo">New Password</div>
+                                    <div class="pw-icon">
+                                        <input type="password" placeholder="Write your password" id="password" class="sub">
+                                        <img src="assets/vektor-eye.png" alt="eye" class="eye">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="detail-colomn">
-                            <div class="form-detailinfo">
-                                <div class="personalinfo-text detailinfo">Confirm Password</div>
-                                <div class="pw-icon">
-                                    <input type="password" placeholder="Confirm your password" id="password" class="sub">
-                                    <img src="assets/vektor-eye.png" alt="eye" class="eye">
+                            <div class="detail-colomn">
+                                <div class="form-detailinfo">
+                                    <div class="personalinfo-text detailinfo">Confirm Password</div>
+                                    <div class="pw-icon">
+                                        <input type="password" placeholder="Confirm your password" id="password" class="sub">
+                                        <img src="assets/vektor-eye.png" alt="eye" class="eye">
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
-                        
-                    </div>
-                </div> 
-                <div class="button-profilpage margin">
-                    <div class="button-border">
-                        <button type="submit" class="button-item">
-                            Update changes
-                        </button> 
-                    
                     </div> 
+                    <div class="button-profilpage margin">
+                        <div class="button-border">
+                            <button type="submit" class="button-item">
+                                Update changes
+                            </button> 
                         
+                        </div> 
+                            
+                    </div>
+        
                 </div>
-    
+
             </div>
+        </section>
 
-        </div>
-    </section>
-
-</main>
+    </main>
     <footer class="ft-hp">
         <div class="ft-hp-wrap">
             <div class="logo-ft">
@@ -262,4 +268,8 @@
     </footer>
 
 </body>
+<script>
+    feather.replace()
+
+</script>
 </html>
