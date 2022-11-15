@@ -216,7 +216,7 @@ if (window.location.href.endsWith('viewAll.html') ) {
     }
     )
 } else if(window.location.href.endsWith('Index.html') ||
-window.location.href.endsWith('netlify.app')
+window.location.href('https://stellular-mandazi-74c7b5.netlify.app/')
 ) {
     const imageNowShowing = [
         {
