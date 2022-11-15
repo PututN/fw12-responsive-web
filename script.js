@@ -1,4 +1,4 @@
-if (window.location.href.endsWith('viewAll.html')) {
+if (window.location.href.endsWith('viewAll.html') ) {
     feather.replace()
     const dataListMovie = [
             {
@@ -215,7 +215,9 @@ if (window.location.href.endsWith('viewAll.html')) {
         elementLink.appendChild(btnDetail);
     }
     )
-} else if(window.location.href.endsWith('Index.html')) {
+} else if(window.location.href.endsWith('Index.html') ||
+window.location.href.endsWith('netlify.app')
+) {
     const imageNowShowing = [
         {
             picture: "assets/img-icon1.png"
