@@ -1,4 +1,4 @@
-if (window.location.href.endsWith('viewAll.html') ) {
+if (window.location.href.endsWith('viewAll.html')) {
     feather.replace()
     const dataListMovie = [
             {
@@ -215,9 +215,7 @@ if (window.location.href.endsWith('viewAll.html') ) {
         elementLink.appendChild(btnDetail);
     }
     )
-} else if(window.location.href.endsWith('Index.html') ||
-window.location.href('https://stellular-mandazi-74c7b5.netlify.app/')
-) {
+} else if(window.location.href.endsWith('Index.html')) {
     const imageNowShowing = [
         {
             picture: "assets/img-icon1.png"
