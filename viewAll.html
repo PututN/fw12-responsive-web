@@ -82,7 +82,7 @@
                 <div class="listmovie-sort">
                     <div class="listmovie-sortwrap">
                         <select name="sort" id="sort">
-                            <option value="update">Sort</option>
+                            <option value="sort" class="sort">Sort</option>
                             <option value="update">Update</option>
                             <option value="popular">Popular</option>
                             <option value="rating">Rating</option>
@@ -140,8 +140,8 @@
 
         <div class="grid-listmovie">
             <div class="grid-listmovie-background">
-                <div class="grid-listmovie-wrap">
-                    <div class="grid-listmovie-wraptop">
+                <div class="grid-listmovie-wrap" id="gridListMovie">
+                    <!-- <div class="grid-listmovie-wraptop">
                         <div class="up-icon">
                             <img src="assets/img-icon4.png" alt="img">
                             <h5>Black Widow</h5>
@@ -232,7 +232,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -325,6 +325,84 @@
 </body>
     <script>
      feather.replace()
+        const dataListMovie = [
+            {
+                picture : 'assets/img-icon4.png',
+                title : 'Black Widow',
+                genre : 'Action, Adventure, Sci-Fi',
+            },
+            {
+                picture : 'assets/img-icon4.png',
+                title : 'Black Widow',
+                genre : 'Action, Adventure, Sci-Fi',
+            },
+            {
+                picture : 'assets/img-icon4.png',
+                title : 'Black Widow',
+                genre : 'Action, Adventure, Sci-Fi',
+            },
+            {
+                picture : 'assets/img-icon4.png',
+                title : 'Black Widow',
+                genre : 'Action, Adventure, Sci-Fi',
+            },
+            {
+                picture : 'assets/img-icon4.png',
+                title : 'Black Widow',
+                genre : 'Action, Adventure, Sci-Fi',
+            },
+            {
+                picture : 'assets/img-icon4.png',
+                title : 'Black Widow',
+                genre : 'Action, Adventure, Sci-Fi',
+            },
+            {
+                picture : 'assets/img-icon4.png',
+                title : 'Black Widow',
+                genre : 'Action, Adventure, Sci-Fi',
+            },
+            {
+                picture : 'assets/img-icon4.png',
+                title : 'Black Widow',
+                genre : 'Action, Adventure, Sci-Fi',
+            },
+        ]
+        const gridListMovie = document.getElementById('gridListMovie');
+        dataListMovie.forEach((data) => {
+            const wrapTop = document.createElement('div');
+            wrapTop.className = 'grid-listmovie-wraptop';
+            gridListMovie.appendChild(wrapTop);
 
+            const upIcon = document.createElement('div');
+            upIcon.className = 'up-icon';
+            wrapTop.appendChild(upIcon);
+
+            const imgListMovie = document.createElement('img');
+            imgListMovie.setAttribute('src', data.picture);
+            upIcon.appendChild(imgListMovie);
+
+            const titleListMovie = document.createElement('h5');
+            titleListMovie.innerHTML = data.title;
+            upIcon.appendChild(titleListMovie);
+
+            const genreListMovie = document.createElement('p');
+            genreListMovie.innerText = data.genre;
+            upIcon.appendChild(genreListMovie);
+
+            const iconDetail = document.createElement('div');
+            iconDetail.className = 'icon-detail';
+            upIcon.appendChild(iconDetail);
+
+            const linkDetail= document.createElement('a');
+            linkDetail.setAttribute('href', 'movieDetails.html');
+            iconDetail.appendChild(linkDetail);
+
+            const btnDetail =  document.createElement('button');
+            btnDetail.className = 'icon-detail-button'
+            btnDetail.type = 'submit';
+            btnDetail.innerText ='Details'
+            linkDetail.appendChild(btnDetail);
+
+        })
     </script>
 </html>

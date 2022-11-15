@@ -372,6 +372,10 @@ main {
 .drop-flex {
   display: flex;
   flex-direction: column;
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 1;
 }
 
 .drop-flex > a {
@@ -387,6 +391,7 @@ main {
 }
 .picture-search {
   margin-right: 120px;
+  position: relative;
 }
 
 .dropdown-nav .search {
@@ -398,9 +403,14 @@ main {
   margin: 0;
   
 }
-.wrap-nav .picture-search:hover > .dropdown-nav {
+.wrap-nav .picture-search:hover > .dropdown-nav{
   display: block;
-  position: relative;
+
+}
+
+.wrap-nav .picture-search:hover > .dropdown-nav.profile {
+  display: block;
+  position: absolute;
 }
 .wrap-nav .picture-search:hover div:nth-child(1) > .search {
   display: none;
@@ -1157,13 +1167,17 @@ padding-bottom: 16px;
 .grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap {
   padding: 0 70px;
   padding-bottom: 40px;
+  text-align: center;
+}
+.listmovie-sortwrap #sort .sort {
+  display: none;
 }
 
 .grid-listmovie  .grid-listmovie-background .grid-listmovie-wraptop {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
-  overflow-x: scroll;
+
 }
 .grid-listmovie  .grid-listmovie-background .grid-listmovie-wrapbottom {
   display: flex;
@@ -1180,6 +1194,7 @@ padding-bottom: 16px;
   border-radius: 8px;
   margin-right: 24px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap .up-icon h5{ 
