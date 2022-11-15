@@ -1,4 +1,4 @@
-if (window.location.href.endsWith('viewAll.html')) {
+if (window.location.href.endsWith('viewAll.html') || window.location.href.endsWith('viewall')) {
     feather.replace()
     const dataListMovie = [
             {
@@ -80,7 +80,7 @@ if (window.location.href.endsWith('viewAll.html')) {
 
         })
 
-} else if (window.location.href.endsWith('homepage2.html')) {
+} else if (window.location.href.endsWith('homepage2.html') || window.location.href.endsWith('hompage2')) {
     feather.replace()
 
     const imageNowShowing = [
@@ -215,7 +215,7 @@ if (window.location.href.endsWith('viewAll.html')) {
         elementLink.appendChild(btnDetail);
     }
     )
-} else if(window.location.href.endsWith('Index.html')) {
+} else if(window.location.href.endsWith('Index.html') || window.location.href.endsWith('/')) {
     const imageNowShowing = [
         {
             picture: "assets/img-icon1.png"
@@ -306,7 +306,7 @@ if (window.location.href.endsWith('viewAll.html')) {
         elLink.appendChild(btnDetail)
     }
     )
-} else if(window.location.href.endsWith('signIn.html')) {
+} else if(window.location.href.endsWith('signIn.html') || window.location.href.endsWith('signin')) {
     feather.replace()
     //make variable for js
     const elementEmail = document.getElementById('email');
@@ -361,7 +361,7 @@ if (window.location.href.endsWith('viewAll.html')) {
             // console.log(iconEye)
         }
     } )
-} else if (window.location.href.endsWith('signUp.html')) {
+} else if (window.location.href.endsWith('signUp.html') || window.location.href.endsWith('signup')) {
     feather.replace()
     const elementFirstName = document.getElementById('first-name');
     const elementLastName = document.getElementById('last-name');
