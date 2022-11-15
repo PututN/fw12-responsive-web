@@ -57,63 +57,9 @@
             </footer>
         </section>
 
-        <script>
-            feather.replace()
-            //make variable for js
-            const elementEmail = document.getElementById('email');
-            const elementPassword = document.getElementById('password');
-            const elementForm = document.getElementById('form-login')
-            const elementAlert = document.createElement("div")
-            const styleAlert = elementAlert.style
-            const iconEye = document.getElementById('eye')
-            elementForm.addEventListener('submit', (event) => { //ketika di submit akan menjalanjan fungsi
-                event.preventDefault()
-                if (elementEmail.value === "admin@tickitz.com" && elementPassword.value === "12345") {
-                    elementForm.appendChild(elementAlert) //appendChild digunakan untuk menambahkan child diakhir sebuah parent (elemntForm)
-                    elementAlert.innerHTML = "Login Success"
-                    styleAlert.color = "black"
-                    styleAlert.textAlign = 'center'
-                    styleAlert.background = '#B6E2A1'
-                    styleAlert.border = "2px solid black"
-                    styleAlert.padding = "3px"
-                    styleAlert.fontWeight = "900"
-                    styleAlert.borderRadius = "10px"
-                    setInterval(() => {
-                        window.location.href = "homepage2.html"
-                    }, 3000
-                    )
-                } else {
-                    elementForm.appendChild(elementAlert) //appendChild digunakan untuk menambahkan child diakhir sebuah parent (elemntForm)
-                    elementAlert.innerHTML = "Login Failed"
-                    styleAlert.color = "black"
-                    styleAlert.textAlign = 'center'
-                    styleAlert.background = '#F7A4A4'
-                    styleAlert.border = "2px solid black"
-                    styleAlert.padding = "3px"
-                    styleAlert.fontWeight = "900"
-                    styleAlert.borderRadius = "10px"
-                    setTimeout(() => {
-                        elementAlert.remove()
-                    }, 3000)
-                }
-            }
-            )
-            iconEye.addEventListener('click', (event) =>{ //membuat kondisi eye ketika diklik berubah icon dan merubah form type password menjadi type text
-                if (elementPassword.type === 'password') {
-                    iconEye.classList.remove('fa-eye') 
-                    iconEye.classList.add('fa-eye-slash') 
-                    elementPassword.type = "text"
-                    // console.log(iconEye)
-                } 
-                else {
-                    iconEye.classList.remove('fa-eye-slash')
-                    iconEye.classList.add('fa-eye')
-                    elementPassword.type = "password"
-                    // console.log(iconEye)
-                }
-            } )
-        </script>
     </main>
 </body>
+<script src="/script.js">
+</script>
 
 </html>

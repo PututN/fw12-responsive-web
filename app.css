@@ -1162,6 +1162,7 @@ padding-bottom: 16px;
   background-color: white;
   margin-left: 70px;
   margin-right: 70px;
+  max-width: 1300px;
 }
 
 .grid-listmovie  .grid-listmovie-background .grid-listmovie-wrap {
@@ -3101,6 +3102,17 @@ cursor: pointer;
   background: #5F2EEA;
   color: #F7F7FC;
 }
+@media (max-width :1024px) {
+  .grid-listmovie .grid-listmovie-background .grid-listmovie-wrap .up-icon {
+    margin-right: 15px;
+  }
+  .grid-listmovie .grid-listmovie-background {
+   margin: 0 10px;
+  }
+  .grid-listmovie .grid-listmovie-background .grid-listmovie-wrap {
+    padding: 0px;
+  }
+}
 @media (max-width: 992px) {  
 .paymentpage {
   flex-direction: column;
@@ -3274,10 +3286,50 @@ margin-top: 20px;
   .homepage-top {
     flex-direction: column;
   }
+  .grid-listmovie .grid-listmovie-background .grid-listmovie-wrap .up-icon {
+padding: 5px;
+  }
+  .grid-listmovie .grid-listmovie-background .grid-listmovie-wrap {
+    padding: 0px;
+  }
+  .listmovie {
+    padding: 30px;
+  }
 }
 @media (max-width : 425px) {
+  .grid-listmovie .grid-listmovie-background .grid-listmovie-wraptop {
+    margin: 0 5px;
+  }
   .moviedetail-top {
     padding: 40px 0px 0;
+  }
+  .grid-listmovie .grid-listmovie-background .grid-listmovie-wrap .up-icon {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding: 10px;
+  }
+  .listmovie .listmovie-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .listmovie-sort {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.listmovie-sortwrap {
+  width: 100%;
+  text-align: center;
+}
+.listmovie .listmovie-wrap .listmovie-search {
+  margin: 0px;
+  width: 100%;
+}
+.grid-listmovie .grid-listmovie-background {
+  margin: 0px 5px;
+}
+  }
+  .listmovie-title {
+    margin-bottom: 20px;
   }
   .moviedetail-center {
     padding: 70px 20px 46px;;

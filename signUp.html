@@ -65,31 +65,9 @@
     </section>
 
   
-    <script>
-        feather.replace()
-        const elementFirstName = document.getElementById('first-name');
-        const elementLastName = document.getElementById('last-name');
-        const elementPhoneNumber = document.getElementById('phone-number');
-        const elementEmail = document.getElementById('email');
-        const elementPassword = document.getElementById('password');
-        const iconEye = document.getElementById('eye');
-        
-        iconEye.addEventListener('click', (event) =>{ //membuat kondisi eye ketika diklik berubah icon dan merubah form type password menjadi type text
-                if (elementPassword.type === 'password') {
-                    iconEye.classList.remove('fa-eye') 
-                    iconEye.classList.add('fa-eye-slash') 
-                    elementPassword.type = "text"
-                    // console.log(iconEye)
-                } 
-                else {
-                    iconEye.classList.remove('fa-eye-slash')
-                    iconEye.classList.add('fa-eye')
-                    elementPassword.type = "password"
-                    // console.log(iconEye)
-                }
-            } )
-
-      </script>
       </main>
 </body>
+    <script src="/script.js">
+
+    </script>
 </html>
