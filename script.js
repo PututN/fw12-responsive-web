@@ -155,66 +155,102 @@ if (window.location.href.endsWith('viewAll.html') || window.location.href.endsWi
         
     });
     
-    const imageUpComingMovie = [
-    {
-        picture: "assets/img-icon4.png",
-        title: 'Black Widow',
-        genre : 'Action, Adventure, Sci-Fi',
-    },
-    {
-        picture: "assets/img-icon5.png",
-        title: 'The Witches',
-        genre : 'Adventure, Comedy, Family',
-    },
-    {
-        picture: "assets/img-icon6.png",
-        title: 'Tenet',
-        genre : 'Action, Sci-Fi',
-    },
-    {
-        picture: "assets/img-icon4.png",
-        title: 'Black Widow',
-        genre : 'Action, Adventure, Sci-Fi',
-    },
-    {
-        picture: "assets/img-icon5.png",
-        title: 'The Witches',
-        genre : 'Adventure, Comedy, Family',
-    },
-    ];
-    const upComingMovie = document.getElementById('upComingMovie');
-    imageUpComingMovie.forEach((data) => {
-        const upIconWrap = document.createElement('div');
-        upIconWrap.className = "up-icon";
-        upComingMovie.appendChild(upIconWrap);
+    // const imageUpComingMovie = [
+    // {
+    //     picture: "assets/img-icon4.png",
+    //     title: 'Black Widow',
+    //     genre : 'Action, Adventure, Sci-Fi',
+    // },
+    // {
+    //     picture: "assets/img-icon5.png",
+    //     title: 'The Witches',
+    //     genre : 'Adventure, Comedy, Family',
+    // },
+    // {
+    //     picture: "assets/img-icon6.png",
+    //     title: 'Tenet',
+    //     genre : 'Action, Sci-Fi',
+    // },
+    // {
+    //     picture: "assets/img-icon4.png",
+    //     title: 'Black Widow',
+    //     genre : 'Action, Adventure, Sci-Fi',
+    // },
+    // {
+    //     picture: "assets/img-icon5.png",
+    //     title: 'The Witches',
+    //     genre : 'Adventure, Comedy, Family',
+    // },
+    // ];
+        //memanggil/import data di fetch
+        const elementUpComingMovie = document.getElementById('upComingMovie')
 
-        const imgUpComingMovie = document.createElement('img');
-        imgUpComingMovie.setAttribute('src', data.picture);
-        upIconWrap.appendChild(imgUpComingMovie);
+        //membuat variable untuk data API menggunakan fetch
+    
+        //mengambil data dari variable
+        const getData = async () => {
+            const dataMovie = await fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ead1d8a314197c8be641efe9adeea96b&language=en-US&page=5')
+            const dataGenre = await fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=ead1d8a314197c8be641efe9adeea96b&language=en-US')
+    
+            const responMovie = await dataMovie
+            const responGenre = await dataGenre
+    
+            const getMovie = await responMovie.json()
+            const getGenre = await responGenre.json()
+            // const movieResult = 
+            getMovie.results.forEach((data) => {
+    
+                const elementUpIcon = document.createElement('div');
+                elementUpComingMovie.appendChild(elementUpIcon);
+                elementUpIcon.className = "up-icon";
+    
+                const elementImgUpComing = document.createElement('img');
+                elementUpIcon.appendChild(elementImgUpComing);
+                elementImgUpComing.setAttribute('src', 'https://www.themoviedb.org/t/p/w300_and_h450_bestv2' + data.poster_path);
+    
+                const elementTitle = document.createElement('h5');
+                elementUpIcon.appendChild(elementTitle);
+                elementTitle.innerHTML = data.title;
+    
+                //mengambil id dari getMovie kemudian dipasangkan dengan getGenre
+                const elementGenre = document.createElement('p');
+                elementUpIcon.appendChild(elementGenre);
+                console.log(getGenre.genres)
+                console.log(data.genre_ids)
+                data.genre_ids.forEach((id) => {
+                    getGenre.genres.forEach((genres) => {
+                        if (id === genres.id) {
+                            elementGenre.innerText = `${genres.name} ${elementGenre.innerHTML}`
+                        }
+    
+                    });
+    
+    
+                })
+    
+                const elementBtnDetail = document.createElement('div');
+                elementUpIcon.appendChild(elementBtnDetail);
+                elementBtnDetail.className = "icon-detail";
+    
+                const elLink = document.createElement('a');
+                elLink.setAttribute("href", 'movieDetails.html')
+                elementBtnDetail.appendChild(elLink);
+    
+                const btnDetail = document.createElement('button');
+                btnDetail.innerHTML = "Details"
+                btnDetail.type = "submit"
+                btnDetail.className = "icon-detail-button"
+                elLink.appendChild(btnDetail)
+    
+    
+            });
+    
+            console.log(getMovie)
+            console.log(getGenre)
+    
+        }
+        getData()
 
-        const title = document.createElement('h5');
-        title.innerHTML = data.title;
-        upIconWrap.appendChild(title);
-
-        const genre = document.createElement('p');
-        genre.innerText = data.genre;
-        upIconWrap.appendChild(genre);
-
-        const btnWrap = document.createElement('div');
-        btnWrap.className = 'icon-detail'
-        upIconWrap.appendChild(btnWrap);
-
-        const elementLink = document.createElement('a');
-        elementLink.setAttribute('href', 'movieDetails.html')
-        btnWrap.appendChild(elementLink);
-
-        const btnDetail = document.createElement('button');
-        btnDetail.className = 'icon-detail-button'
-        btnDetail.innerHTML = 'Details'
-        btnDetail.type = 'submit'
-        elementLink.appendChild(btnDetail);
-    }
-    )
 } else if(window.location.href.endsWith('Index.html') || window.location.href.endsWith('/')) {
     const imageNowShowing = [
         {

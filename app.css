@@ -393,6 +393,14 @@ main {
   margin-right: 120px;
   position: relative;
 }
+/* .picture {
+  text-align: center;
+} */
+.up-icon > img {
+  width : 159px;
+  border-radius: 10px;
+
+} 
 
 .dropdown-nav .search {
   position: absolute;
@@ -749,6 +757,7 @@ padding-bottom: 16px;
   border-radius: 8px;
   margin-right: 24px;
   margin-bottom: 15px;
+  text-align : center;
 }
 
 .wrap-UpMovie .up-icon h5{
@@ -3283,6 +3292,13 @@ margin-top: 20px;
 }
 }
 @media (max-width : 768px) {
+  .auth-nav, .header-hp {
+  padding: 40px;
+  }
+  .mv-month {
+  margin-left: 20px;
+  }
+  
   .homepage-center {
     padding: 0px;
 
@@ -3294,7 +3310,7 @@ margin-top: 20px;
     padding: 0px;
   }
   .ft-hp {
-    padding: 50px 0 0;
+    padding: 40px;
   }
   .homepage-top {
     flex-direction: column;
