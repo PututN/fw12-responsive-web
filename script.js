@@ -169,19 +169,21 @@ if (window.location.href.endsWith('viewAll.html') || window.location.href.endsWi
     //membuat variable untuk data API menggunakan fetch
     const dataMovie = fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ead1d8a314197c8be641efe9adeea96b&language=en-US&page=5')
     const dataGenre = fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=ead1d8a314197c8be641efe9adeea96b&language=en-US')
-    
+    console.log(dataMovie)
     const getData = async () => { 
         //asyncronus bisa menjalankan perintah/kondisi tanpa perlu menunggu kode yang lain selesai
         
         //mengambil data dari variable
         const responMovie = await dataMovie
         const responGenre = await dataGenre
-
+        console.log(responMovie)
+        
         const getMovie = await responMovie.json()
         const getGenre = await responGenre.json()
+        console.log(getMovie)
 
         getMovie.results.forEach((data) => {
-
+            console.log(data)
             const elementUpIcon = document.createElement('div');
             elementUpComingMovie.appendChild(elementUpIcon);
             elementUpIcon.className = "up-icon";
@@ -224,9 +226,6 @@ if (window.location.href.endsWith('viewAll.html') || window.location.href.endsWi
 
 
         });
-
-        console.log(getMovie)
-        console.log(getGenre)
 
     }
     getData()
