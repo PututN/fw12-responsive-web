@@ -3430,6 +3430,24 @@ font-size: 13px;
 }
 
 @media (max-width : 320px) {
+  .homepage-bott a{
+    font-size: 14px;
+  }
+  .homepage-bott {
+padding: 0 10px;
+  }
+  .homepage-bott .upMovie{
+    font-size: 16px;
+  }
+  .header-hp {
+    padding: 10px;
+  }
+  .header-hp .nowShowing {
+font-size: 16px;
+  }
+  .homepage-center a {
+font-size: 14px;
+  }
   .grid-listmovie .grid-listmovie-background .grid-listmovie-wrap .up-icon h5 {
     font-size: 12px;
 }
