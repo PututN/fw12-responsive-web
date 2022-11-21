@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Dashboard Page</title>
 </head>
+
 <body>
     <nav class="auth-nav second">
-        <div>
+
+        <div class="logo-nav">
             <img src="assets/nav-logo.png" alt="logo">
 
         </div>
-        <div class="icon-nav third">
-                <a href="#">Dashboard</a>
-                <a href="#">Manage Movie</a>
-                <a href="#">Manage Schedule</a>
+        <div class="icon-nav">
+            <a href="Index.html">Dashboard</a>
+            <a href="viewAll.html">Manage Movie</a>
+            <a href="viewAll.html">Manage Schedule</a>
         </div>
         <div class="wrap-nav">
             <div class="flex-nav">
                 <div class="picture-search">
-                    <div><img src="assets/nav-search.png" alt=""></div> 
+                    <div>
+                        <i data-feather="search" class="search" id="search"></i>
+                        <!-- <img src="assets/nav-search.png" alt=""> -->
+                    </div>
                     <div class="dropdown-nav">
+                        <i data-feather="search" class="search" id="search"></i>
                         <input type="text" placeholder="Search Movie Name ...">
                     </div>
                 </div>
@@ -30,26 +38,43 @@
                     <div><img src="assets/nav-photo.png" alt=""></div>
                     <div class="dropdown-nav profile">
                         <div class="drop-flex">
-                            <a href="#">Profile</a>
-                            <a href="#">Logout</a>
+                            <a href="profilePage.html">Profile</a>
+                            <a href="signIn.html">Logout</a>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="pic-nav">
-                <img src="assets/nav-search.png" alt="search" class="icon-corner">
-                <div class="text-nav">
-                    Search Movie Name ...
-                </div>
-            </div>
-            <div class="pic-nav">
-                <img src="assets/nav-photo.png" alt="profile" class="icon-corner">
-                <div class="text-nav"><a href="#">Profile</a></div>
-                <div class="text-nav"><a href="#">Logout</a> </div>
-            </div> -->
         </div>
-        
+        <div class="parent-hiden">
+            <div class="nav-hiden">
+                <img src="assets/nav-menu.png" alt="">
+            </div>
+            <div class="nav-dropdown">
+                <div class="input-nav">
+                    <div class="search-dropdown">
+                        <img src="assets/nav-search.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="Index.html">Home</a>
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="viewAll.html">List Movie</a>
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="profilePage.html">Profile</a>
+                </div>
+                <div class="nav-dropdwon-text">
+                    <a href="signIn.html">Logout</a>
+                </div>
+                <p style="text-align:center" class="bottom-footer">
+                    &#169;2020 Tickitz. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+
     </nav>
     <main class="layout-managemovie">
         <div class="dashboard-flex">
@@ -65,23 +90,34 @@
                 </div>
                 <div class="graph-dashboard right">
                     <form action="">
-                        <select name="" id="Movie">
-                            <option value="">Select Movie</option>
-                            <option value="Spiderman">Spiderman</option>
-                            <option value="Black Widow">Black Widow</option>
-                            <option value="The Witches">The Witches</option>
-                        </select>
-                        <select name="" id="Movie">
-                            <option value="">Select Movie</option>
-                            <option value="Spiderman">Spiderman</option>
-                            <option value="Black Widow">Black Widow</option>
-                            <option value="The Witches">The Witches</option>
-                        </select>
-
-                    </form> 
+                        <div class="wrap-select">
+                            <select name="" id="Movie" class="dasboard">
+                                <option value="">Select Movie</option>
+                                <option value="Spiderman">Spiderman</option>
+                                <option value="Black Widow">Black Widow</option>
+                                <option value="The Witches">The Witches</option>
+                            </select>
+                        </div>
+                        <div class="wrap-select">
+                            <select name="" id="Movie" class="dasboard">
+                                <option value="">Select Movie</option>
+                                <option value="Spiderman">Spiderman</option>
+                                <option value="Black Widow">Black Widow</option>
+                                <option value="The Witches">The Witches</option>
+                            </select>
+                        </div>
+                        <div class="wrap-select">
+                            <select name="" id="Movie" class="dasboard">
+                                <option value="">Select Movie</option>
+                                <option value="Spiderman">Spiderman</option>
+                                <option value="Black Widow">Black Widow</option>
+                                <option value="The Witches">The Witches</option>
+                            </select>
+                        </div>
+                    </form>
 
                 </div>
-                
+
             </div>
         </div>
     </main>
@@ -127,30 +163,30 @@
                     <img src="assets/img-footer3.png" alt="img-logo3"> -->
                 </div>
             </div>
-            <div  class="fu-item-wrap">
+            <div class="fu-item-wrap">
                 <div class="epl-header">
                     <h4 class="hd-exp follow-us">Follow Us<h4>
                 </div>
                 <ul>
                     <li>
                         <div class="logo-wrapper">
-                            <img src="assets/logo-fb.png" alt="facebook"> 
-                        </div> 
+                            <img src="assets/logo-fb.png" alt="facebook">
+                        </div>
                         <div class="text-ft">
                             Tickitz Cinema id
-                        </div> 
+                        </div>
                     </li>
-                    <li><img src="assets/logo-ig.png.png" alt="instagram"> 
+                    <li><img src="assets/logo-ig.png.png" alt="instagram">
                         <div class="text-ft">
                             tickitz.id
                         </div>
                     </li>
-                    <li><img src="assets/logo-twitter.png" alt="twitter"> 
+                    <li><img src="assets/logo-twitter.png" alt="twitter">
                         <div class="text-ft">
                             tickitz.id
                         </div>
                     </li>
-                    <li><img src="assets/logo-yt.png" alt="youtube"> 
+                    <li><img src="assets/logo-yt.png" alt="youtube">
                         <div class="text-ft">
                             Tickitz Cinema id
                         </div>
@@ -160,10 +196,15 @@
         </div>
         <div class="ft-copyright">
             <p class="bottom-footer">
-            &#169;2020 Tickitz. All Rights Reserved.
-        </p> 
+                &#169;2020 Tickitz. All Rights Reserved.
+            </p>
         </div>
     </footer>
 
 </body>
+<script>
+    feather.replace()
+
+</script>
+
 </html>

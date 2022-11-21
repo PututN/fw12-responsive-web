@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,18 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Manage Movie Page</title>
 </head>
+
 <body>
     <nav class="auth-nav second">
-        
+
         <div class="logo-nav">
             <img src="assets/nav-logo.png" alt="logo">
 
         </div>
         <div class="icon-nav">
-                <a href="Index.html">Home</a>
-                <a href="viewAll.html">List Movie</a>
+            <a href="Index.html">Dashboard</a>
+            <a href="viewAll.html">Manage Movie</a>
+            <a href="viewAll.html">Manage Schedule</a>
         </div>
         <div class="wrap-nav">
             <div class="flex-nav">
@@ -25,7 +28,7 @@
                     <div>
                         <i data-feather="search" class="search" id="search"></i>
                         <!-- <img src="assets/nav-search.png" alt=""> -->
-                    </div> 
+                    </div>
                     <div class="dropdown-nav">
                         <i data-feather="search" class="search" id="search"></i>
                         <input type="text" placeholder="Search Movie Name ...">
@@ -68,212 +71,213 @@
                 </div>
                 <p style="text-align:center" class="bottom-footer">
                     &#169;2020 Tickitz. All Rights Reserved.
-                </p> 
+                </p>
             </div>
         </div>
-    
+
     </nav>
 
     <main class="layout-managemovie">
-    <section class="formmovie">
-        <div class="formmovie-padding">
-            <div class="formmovie-title">Form Movie</div>
-            <div class="formmovie-top">
-                <div class="formmovie-flex">
-                    <div class="img-bordermanagemovie">
-                        <img src="assets/img-managemovie.png" alt="">
-                    </div>
-                    <div class="formmovie-topleft">
-                        <div class="formmovie-subtitle">Movie Name</div>
-                        <div class="formmovie-text">Spider-Man: Homecoming</div>
-                        <div class="formmovie-subtitle">Director</div>
-                        <div class="formmovie-text">Jon Watts</div>
-                        <div class="formmovie-subtitle">Release date</div>
-                        <div class="formmovie-text">07/05/2020</div>
+        <section class="formmovie">
+            <div class="formmovie-padding">
+                <div class="formmovie-title">Form Movie</div>
+                <div class="formmovie-top">
+                    <div class="formmovie-flex">
+                        <div class="img-bordermanagemovie">
+                            <img src="assets/img-managemovie.png" alt="">
+                        </div>
+                        <div class="formmovie-topleft">
+                            <div class="formmovie-subtitle">Movie Name</div>
+                            <div class="formmovie-text">Spider-Man: Homecoming</div>
+                            <div class="formmovie-subtitle">Director</div>
+                            <div class="formmovie-text">Jon Watts</div>
+                            <div class="formmovie-subtitle">Release date</div>
+                            <div class="formmovie-text">07/05/2020</div>
+
+                        </div>
+                        <div class="formmovie-topright">
+                            <div class="formmovie-subtitle">Category</div>
+                            <div class="formmovie-text">Action, Adventure, Sci-Fi</div>
+                            <div class="formmovie-subtitle">Category</div>
+                            <div class="formmovie-text">Action, Adventure, Sci-Fi</div>
+                            <div class="subformmovie-flex">
+                                <div>
+                                    <div class="formmovie-subtitle">Duration Hour</div>
+                                    <div class="formmovie-text">2</div>
+                                </div>
+                                <div>
+                                    <div class="formmovie-subtitle">Duration Minute</div>
+                                    <div class="formmovie-text">13</div>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
-                    <div class="formmovie-topright">
-                        <div class="formmovie-subtitle">Category</div>
-                        <div class="formmovie-text">Action, Adventure, Sci-Fi</div>
-                        <div class="formmovie-subtitle">Category</div>
-                        <div class="formmovie-text">Action, Adventure, Sci-Fi</div>
-                        <div class="subformmovie-flex">
-                            <div>
-                                <div class="formmovie-subtitle">Duration Hour</div>
-                                <div class="formmovie-text">2</div>
-                            </div>
-                            <div>
-                                <div class="formmovie-subtitle">Duration Minute</div>
-                                <div class="formmovie-text">13</div>
-                            </div>
+                    <div class="formmovie-subtitle">Synopsis</div>
+                    <div class="formmovie-text">Thrilled by his experience with the Avengers, Peter returns home, where
+                        he
+                        lives with his Aunt May, |
+                    </div>
+                    <div class="button-flex">
+                        <div>
+                            <button type="submit" class="buttonsubmit">Reset</button>
+                        </div>
+                        <div>
+                            <button type="submit" class="buttonsubmit active">Submit</button>
                         </div>
 
                     </div>
 
-                </div>
-                <div class="formmovie-subtitle">Synopsis</div>
-                <div class="formmovie-text">Thrilled by his experience with the Avengers, Peter returns home, where he
-                    lives with his Aunt May, |
-                </div>
-                <div class="button-flex">
-                    <div>
-                        <button type="submit" class="buttonsubmit">Reset</button>
-                    </div>
-                    <div>
-                        <button type="submit" class="buttonsubmit active">Submit</button>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="listmovie">
-            <div class="listmovie-wrap">
-                <div class="listmovie-title">Data Movie</div>
-                <div class="listmovie-sort">
-                    <div class="listmovie-sortwrap">
-                        <select name="sort" id="sort">
-                            <option value="update">Sort</option>
-                            <option value="update">Update</option>
-                            <option value="popular">Popular</option>
-                            <option value="rating">Rating</option>
-                            <option value="title">Title</option>
-                        </select>
-                        
-                    </div>
-                </div>
-                <div class="listmovie-search">
-                    <div class="listmovie-searchwrap">
-                        <input type="text" placeholder="Search Movie Name ...">
-                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="grid-listmovie">
-            <div class="grid-listmovie-background">
-                <div class="grid-listmovie-wrap">
-                    <div class="grid-listmovie-wraptop">
-                        <div class="up-icon">
-                            <img src="assets/img-icon4.png" alt="img">
-                            <h5>Black Widow</h5>
-                            <p>Action, Adventure, Sci-Fi</p>
-                            <div class="icon-detail">
-                            <button type="submit" class="icon-detail-button">Update</button>
-                            </div>
-                            <div class="icon-detail delete">
-                                <button type="submit" class="icon-detail-button delete">Delete</button>
-                            </div>
-    
-                        </div>
-                        <div class="up-icon">
-                            <img src="assets/img-icon4.png" alt="img">
-                            <h5>Black Widow</h5>
-                            <p>Action, Adventure, Sci-Fi</p>
-                            <div class="icon-detail">
-                            <button type="submit" class="icon-detail-button">Update</button>
-                            </div>
-                            <div class="icon-detail delete">
-                                <button type="submit" class="icon-detail-button delete">Delete</button>
-                            </div>
-
-                        </div>
-                        <div class="up-icon">
-                            <img src="assets/img-icon4.png" alt="img">
-                            <h5>Black Widow</h5>
-                            <p>Action, Adventure, Sci-Fi</p>
-                            <div class="icon-detail">
-                            <button type="submit" class="icon-detail-button">Update</button>
-                            </div>
-                            <div class="icon-detail delete">
-                                <button type="submit" class="icon-detail-button delete">Delete</button>
-                            </div>
-
-                        </div>
-                        <div class="up-icon">
-                            <img src="assets/img-icon4.png" alt="img">
-                            <h5>Black Widow</h5>
-                            <p>Action, Adventure, Sci-Fi</p>
-                            <div class="icon-detail">
-                            <button type="submit" class="icon-detail-button">Update</button>
-                            </div>
-                            <div class="icon-detail delete">
-                                <button type="submit" class="icon-detail-button delete">Delete</button>
-                            </div>
+        </section>
+        <section>
+            <div class="listmovie">
+                <div class="listmovie-wrap">
+                    <div class="listmovie-title">Data Movie</div>
+                    <div class="listmovie-sort">
+                        <div class="listmovie-sortwrap">
+                            <select name="sort" id="sort">
+                                <option class="sort"">Sort</option>
+                            <option value=" update">Update</option>
+                                <option value="popular">Popular</option>
+                                <option value="rating">Rating</option>
+                                <option value="title">Title</option>
+                            </select>
 
                         </div>
                     </div>
-                    <div class="grid-listmovie-wrapbottom">
-                        <div class="up-icon">
-                            <img src="assets/img-icon4.png" alt="img">
-                            <h5>Black Widow</h5>
-                            <p>Action, Adventure, Sci-Fi</p>
-                            <div class="icon-detail">
-                            <button type="submit" class="icon-detail-button">Update</button>
-                            </div>
-                            <div class="icon-detail delete">
-                                <button type="submit" class="icon-detail-button delete">Delete</button>
-                            </div>
-
-                        </div>
-                        <div class="up-icon">
-                            <img src="assets/img-icon4.png" alt="img">
-                            <h5>Black Widow</h5>
-                            <p>Action, Adventure, Sci-Fi</p>
-                            <div class="icon-detail">
-                            <button type="submit" class="icon-detail-button">Update</button>
-                            </div>
-                            <div class="icon-detail delete">
-                                <button type="submit" class="icon-detail-button delete">Delete</button>
-                            </div>
-
-                        </div>
-                        <div class="up-icon">
-                            <img src="assets/img-icon4.png" alt="img">
-                            <h5>Black Widow</h5>
-                            <p>Action, Adventure, Sci-Fi</p>
-                            <div class="icon-detail">
-                            <button type="submit" class="icon-detail-button">Update</button>
-                            </div>
-                            <div class="icon-detail delete">
-                                <button type="submit" class="icon-detail-button delete">Delete</button>
-                            </div>
-
-                        </div>
-                        <div class="up-icon">
-                            <img src="assets/img-icon4.png" alt="img">
-                            <h5>Black Widow</h5>
-                            <p>Action, Adventure, Sci-Fi</p>
-                            <div class="icon-detail">
-                            <button type="submit" class="icon-detail-button">Update</button>
-                            </div>
-                            <div class="icon-detail delete">
-                                <button type="submit" class="icon-detail-button delete">Delete</button>
-                            </div>
-
+                    <div class="listmovie-search">
+                        <div class="listmovie-searchwrap">
+                            <input type="text" placeholder="Search Movie Name ...">
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-        
-        <div class="page">
-            <div class="page-wrap">
-                <div class="page-box">1</div>
-                <div class="page-box">2</div>
-                <div class="page-box">3</div>
-                <div class="page-box">4</div>
+
+            <div class="grid-listmovie">
+                <div class="grid-listmovie-background">
+                    <div class="grid-listmovie-wrap">
+                        <div class="grid-listmovie-wraptop">
+                            <div class="up-icon">
+                                <img src="assets/img-icon4.png" alt="img">
+                                <h5>Black Widow</h5>
+                                <p>Action, Adventure, Sci-Fi</p>
+                                <div class="icon-detail">
+                                    <button type="submit" class="icon-detail-button">Update</button>
+                                </div>
+                                <div class="icon-detail delete">
+                                    <button type="submit" class="icon-detail-button delete">Delete</button>
+                                </div>
+
+                            </div>
+                            <div class="up-icon">
+                                <img src="assets/img-icon4.png" alt="img">
+                                <h5>Black Widow</h5>
+                                <p>Action, Adventure, Sci-Fi</p>
+                                <div class="icon-detail">
+                                    <button type="submit" class="icon-detail-button">Update</button>
+                                </div>
+                                <div class="icon-detail delete">
+                                    <button type="submit" class="icon-detail-button delete">Delete</button>
+                                </div>
+
+                            </div>
+                            <div class="up-icon">
+                                <img src="assets/img-icon4.png" alt="img">
+                                <h5>Black Widow</h5>
+                                <p>Action, Adventure, Sci-Fi</p>
+                                <div class="icon-detail">
+                                    <button type="submit" class="icon-detail-button">Update</button>
+                                </div>
+                                <div class="icon-detail delete">
+                                    <button type="submit" class="icon-detail-button delete">Delete</button>
+                                </div>
+
+                            </div>
+                            <div class="up-icon">
+                                <img src="assets/img-icon4.png" alt="img">
+                                <h5>Black Widow</h5>
+                                <p>Action, Adventure, Sci-Fi</p>
+                                <div class="icon-detail">
+                                    <button type="submit" class="icon-detail-button">Update</button>
+                                </div>
+                                <div class="icon-detail delete">
+                                    <button type="submit" class="icon-detail-button delete">Delete</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="grid-listmovie-wrapbottom">
+                            <div class="up-icon">
+                                <img src="assets/img-icon4.png" alt="img">
+                                <h5>Black Widow</h5>
+                                <p>Action, Adventure, Sci-Fi</p>
+                                <div class="icon-detail">
+                                    <button type="submit" class="icon-detail-button">Update</button>
+                                </div>
+                                <div class="icon-detail delete">
+                                    <button type="submit" class="icon-detail-button delete">Delete</button>
+                                </div>
+
+                            </div>
+                            <div class="up-icon">
+                                <img src="assets/img-icon4.png" alt="img">
+                                <h5>Black Widow</h5>
+                                <p>Action, Adventure, Sci-Fi</p>
+                                <div class="icon-detail">
+                                    <button type="submit" class="icon-detail-button">Update</button>
+                                </div>
+                                <div class="icon-detail delete">
+                                    <button type="submit" class="icon-detail-button delete">Delete</button>
+                                </div>
+
+                            </div>
+                            <div class="up-icon">
+                                <img src="assets/img-icon4.png" alt="img">
+                                <h5>Black Widow</h5>
+                                <p>Action, Adventure, Sci-Fi</p>
+                                <div class="icon-detail">
+                                    <button type="submit" class="icon-detail-button">Update</button>
+                                </div>
+                                <div class="icon-detail delete">
+                                    <button type="submit" class="icon-detail-button delete">Delete</button>
+                                </div>
+
+                            </div>
+                            <div class="up-icon">
+                                <img src="assets/img-icon4.png" alt="img">
+                                <h5>Black Widow</h5>
+                                <p>Action, Adventure, Sci-Fi</p>
+                                <div class="icon-detail">
+                                    <button type="submit" class="icon-detail-button">Update</button>
+                                </div>
+                                <div class="icon-detail delete">
+                                    <button type="submit" class="icon-detail-button delete">Delete</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div></div>
-        </div>
 
-    </section>
-    <section></section>
+            <div class="page">
+                <div class="page-wrap">
+                    <div class="page-box">1</div>
+                    <div class="page-box">2</div>
+                    <div class="page-box">3</div>
+                    <div class="page-box">4</div>
+                </div>
+                <div></div>
+            </div>
 
-</main>
+        </section>
+        <section></section>
+
+    </main>
 
 
     <footer class="ft-hp">
@@ -315,30 +319,30 @@
                     <img src="assets/img-footer3.png" alt="img-logo3"> -->
                 </div>
             </div>
-            <div  class="fu-item-wrap">
+            <div class="fu-item-wrap">
                 <div class="epl-header">
                     <h4 class="hd-exp follow-us">Follow Us<h4>
                 </div>
                 <ul>
                     <li>
                         <div class="logo-wrapper">
-                            <img src="assets/logo-fb.png" alt="facebook"> 
-                        </div> 
+                            <img src="assets/logo-fb.png" alt="facebook">
+                        </div>
                         <div class="text-ft">
                             Tickitz Cinema id
-                        </div> 
+                        </div>
                     </li>
-                    <li><img src="assets/logo-ig.png.png" alt="instagram"> 
+                    <li><img src="assets/logo-ig.png.png" alt="instagram">
                         <div class="text-ft">
                             tickitz.id
                         </div>
                     </li>
-                    <li><img src="assets/logo-twitter.png" alt="twitter"> 
+                    <li><img src="assets/logo-twitter.png" alt="twitter">
                         <div class="text-ft">
                             tickitz.id
                         </div>
                     </li>
-                    <li><img src="assets/logo-yt.png" alt="youtube"> 
+                    <li><img src="assets/logo-yt.png" alt="youtube">
                         <div class="text-ft">
                             Tickitz Cinema id
                         </div>
@@ -348,8 +352,8 @@
         </div>
         <div class="ft-copyright">
             <p class="bottom-footer">
-            &#169;2020 Tickitz. All Rights Reserved.
-        </p> 
+                &#169;2020 Tickitz. All Rights Reserved.
+            </p>
         </div>
     </footer>
 

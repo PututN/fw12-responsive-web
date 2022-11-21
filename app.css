@@ -442,7 +442,7 @@ main {
   letter-spacing: 0.005em;
   color: #414141;
   text-decoration: none;
-  margin-right: 32px;
+  /* margin-right: 32px; */
   margin-left: 80px;
 }
 .icon-nav.third a {
@@ -2537,13 +2537,22 @@ letter-spacing: 0.25px;
   line-height: 30px;
   letter-spacing: 0.25px;
   color: #000000;  
-
+  margin-left: 26px;
+  width: 100%;
+}
+.wrap-select {
+  margin-bottom: 25px;
+}
+.wrap-select .dasboard {
+  padding: 15px 10px;
+  width: 100%;
 }
 .graph-dashboard {
   margin-top: 27px;
 }
 .graph-dashboard.right {
   background-color: white;
+  padding: 30px 20px;
 }
 .formmovie-top {
   background: #FFFFFF;
