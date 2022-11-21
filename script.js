@@ -182,7 +182,9 @@ if (window.location.href.endsWith('viewAll.html') || window.location.href.endsWi
         const getGenre = await responGenre.json()
         console.log(getMovie)
 
-        getMovie.results.forEach((data) => {
+        getMovie.results
+        .slice(0,5)
+        .forEach((data) => {
             console.log(data)
             const elementUpIcon = document.createElement('div');
             elementUpComingMovie.appendChild(elementUpIcon);
